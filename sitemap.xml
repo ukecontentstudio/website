@@ -7,18 +7,13 @@
   </url>
 
   <url>
-    <loc>https://ukecontentstudio.com/portfolio/translation.html</loc>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://ukecontentstudio.com/portfolio/localization.html</loc>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
     <loc>https://ukecontentstudio.com/portfolio/seo-content.html</loc>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://ukecontentstudio.com/portfolio/seo-gallery.html</loc>
+    <priority>0.8</priority>
   </url>
 
   <url>
@@ -27,13 +22,18 @@
   </url>
 
   <url>
-    <loc>https://ukecontentstudio.com/portfolio/landing-page.html</loc>
+    <loc>https://ukecontentstudio.com/portfolio/product-gallery.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ukecontentstudio.com/portfolio/amazon-listing.html</loc>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://ukecontentstudio.com/portfolio/article-rewriting.html</loc>
-    <priority>0.9</priority>
+    <loc>https://ukecontentstudio.com/portfolio/amazon-gallery.html</loc>
+    <priority>0.8</priority>
   </url>
 
   <url>
@@ -42,8 +42,18 @@
   </url>
 
   <url>
-    <loc>https://ukecontentstudio.com/portfolio/email-copywriting.html</loc>
+    <loc>https://ukecontentstudio.com/portfolio/ai-humanization-gallery.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ukecontentstudio.com/portfolio/article-rewriting.html</loc>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://ukecontentstudio.com/portfolio/article-rewriting-gallery.html</loc>
+    <priority>0.8</priority>
   </url>
 
   <url>
@@ -52,8 +62,28 @@
   </url>
 
   <url>
-    <loc>https://ukecontentstudio.com/portfolio/amazon-listing.html</loc>
+    <loc>https://ukecontentstudio.com/portfolio/proofreading-gallery.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ukecontentstudio.com/portfolio/email-copywriting.html</loc>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://ukecontentstudio.com/portfolio/email-copywriting-gallery.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ukecontentstudio.com/portfolio/translation.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://ukecontentstudio.com/portfolio/translation-gallery.html</loc>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

@@ -43,72 +43,323 @@
 </head>
 <body class="text-zinc-900 antialiased">
   <header class="sticky top-0 z-40 border-b border-black/10 bg-[#F7F5F2]/95 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-      <a href="../index.html" class="leading-none">
-        <span class="block text-sm font-black tracking-[0.32em]">UKE<span class="text-amber-500">.</span></span>
-        <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">Content Studio</span>
+
+  <div
+    class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5"
+  >
+
+    <a href="../index.html" class="shrink-0 leading-none">
+
+      <span class="block text-sm font-black tracking-[0.32em]">
+        UKE<span class="text-amber-500">.</span>
+      </span>
+
+      <span
+        class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500"
+      >
+        Content Studio
+      </span>
+
+    </a>
+
+    <nav class="hidden items-center gap-8 text-sm font-medium lg:flex">
+
+      <a
+        href="../index.html#services"
+        class="transition hover:text-amber-500"
+      >
+        Services
       </a>
-      <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
-  <a href="../index.html#services" class="transition hover:text-amber-500">Services</a>
-  <a href="../index.html#work" class="transition hover:text-amber-500">Work</a>
-  <a href="../index.html#process" class="transition hover:text-amber-500">Process</a>
-  <a href="../insights.html" class="transition hover:text-amber-500">Insights</a>
-  <a href="../index.html#contact" class="transition hover:text-amber-500">Contact</a>
-</nav>
-      <a href="translation.html" class="text-sm font-semibold text-zinc-700 transition hover:text-amber-600">← Back to Case Study</a>
-    </div>
-  </header>
+
+      <a
+        href="../index.html#work"
+        class="transition hover:text-amber-500"
+      >
+        Work
+      </a>
+
+      <a
+        href="../index.html#process"
+        class="transition hover:text-amber-500"
+      >
+        Process
+      </a>
+
+      <a
+        href="../insights.html"
+        class="transition hover:text-amber-500"
+      >
+        Insights
+      </a>
+
+      <a
+        href="../index.html#contact"
+        class="transition hover:text-amber-500"
+      >
+        Contact
+      </a>
+
+    </nav>
+
+    <a
+      href="translation.html"
+      class="max-w-[9rem] shrink-0 text-right text-xs font-semibold leading-5 text-zinc-700 transition hover:text-amber-600 sm:max-w-none sm:text-sm"
+    >
+      ← Back to Case Study
+    </a>
+
+  </div>
+
+</header>
   <main>
-    <section class="px-6 pb-12 pt-16">
-      <div class="mx-auto max-w-7xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-600">English ↔ Turkish Translation</p>
-        <h1 class="mt-5 text-5xl font-black tracking-tight md:text-6xl">Gallery</h1>
-        <p class="mt-6 max-w-3xl text-xl leading-9 text-zinc-600">A curated visual collection exploring accurate translation, cultural context, natural language and consistent brand communication across English and Turkish.</p>
+    <section class="px-5 pb-12 pt-20 sm:px-6 sm:pb-14 sm:pt-24 lg:pb-16 lg:pt-28">
+
+  <div class="mx-auto max-w-7xl">
+
+    <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-600">
+      English ↔ Turkish Translation
+    </p>
+
+    <h1 class="mt-5 text-4xl font-black tracking-tight sm:text-5xl md:text-6xl">
+      Gallery
+    </h1>
+
+    <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-600 sm:text-lg md:text-xl">
+      A curated visual collection exploring accurate translation, cultural context, natural language and consistent brand communication across English and Turkish.
+    </p>
+
+  </div>
+
+</section>
+    <section class="px-5 pb-16 sm:px-6 sm:pb-20 lg:pb-24">
+
+  <div
+    class="mx-auto grid max-w-7xl gap-x-8 gap-y-10 sm:gap-x-10 sm:gap-y-12 lg:gap-y-14 md:grid-cols-2 xl:grid-cols-3"
+  >
+
+    <article class="gallery-card cursor-pointer" onclick="openLightbox(0)">
+      <div class="image-frame">
+        <img
+          src="../images/translation/translation-gallery-01.png"
+          alt="Elegant English and Turkish translation concept focused on clarity, understanding and cultural connection"
+          class="gallery-image"
+        />
+        <div class="image-overlay">
+          <span class="view-project">View Project</span>
+        </div>
       </div>
-    </section>
-    <section class="px-6 pb-24">
-      <div class="mx-auto grid max-w-7xl gap-x-10 gap-y-14 md:grid-cols-2 xl:grid-cols-3">
-        <article class="gallery-card cursor-pointer" onclick="openLightbox(0)">
-          <div class="image-frame"><img src="../images/translation/translation-gallery-01.png" alt="Elegant English and Turkish translation concept focused on clarity, understanding and cultural connection" class="gallery-image" /><div class="image-overlay"><span class="view-project">View Project</span></div></div>
-          <h2 class="mt-5 text-xl font-black">Editorial Translation &amp; Clarity</h2>
-          <p class="mt-2 leading-7 text-zinc-600">A refined bilingual concept showing how precise translation preserves meaning, tone and emotional connection across cultures.</p>
-          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Editorial</span><span class="tag">Clarity</span><span class="tag">Cultural Awareness</span></div>
-        </article>
-        <article class="gallery-card cursor-pointer" onclick="openLightbox(1)">
-          <div class="image-frame"><img src="../images/translation/translation-gallery-02.png" alt="Creative English and Turkish translation concept with bold colors, global communication and natural localization" class="gallery-image" /><div class="image-overlay"><span class="view-project">View Project</span></div></div>
-          <h2 class="mt-5 text-xl font-black">Creative Cross-Cultural Messaging</h2>
-          <p class="mt-2 leading-7 text-zinc-600">A vibrant bilingual direction built around natural expression, cultural relevance and communication that connects with real audiences.</p>
-          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Creative</span><span class="tag">Localization</span><span class="tag">Audience Connection</span></div>
-        </article>
-        <article class="gallery-card cursor-pointer" onclick="openLightbox(2)">
-          <div class="image-frame"><img src="../images/translation/translation-gallery-03.png" alt="Premium brand translation layout comparing English and Turkish messaging with focus on context, tone and meaning" class="gallery-image" /><div class="image-overlay"><span class="view-project">View Project</span></div></div>
-          <h2 class="mt-5 text-xl font-black">Context-Aware Brand Translation</h2>
-          <p class="mt-2 leading-7 text-zinc-600">A premium brand-focused translation concept emphasizing context, terminology and consistency rather than word-for-word conversion.</p>
-          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Brand Voice</span><span class="tag">Context</span><span class="tag">Consistency</span></div>
-        </article>
-        <article class="gallery-card cursor-pointer" onclick="openLightbox(3)">
-          <div class="image-frame"><img src="../images/translation/translation-gallery-04.png" alt="Modern global translation concept showing English and Turkish brand communication across markets" class="gallery-image" /><div class="image-overlay"><span class="view-project">View Project</span></div></div>
-          <h2 class="mt-5 text-xl font-black">Global Brand Voice Adaptation</h2>
-          <p class="mt-2 leading-7 text-zinc-600">A modern localization concept designed to carry brand personality, values and persuasive impact across international markets.</p>
-          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Global</span><span class="tag">Brand Adaptation</span><span class="tag">International</span></div>
-        </article>
-        <article class="gallery-card cursor-pointer" onclick="openLightbox(4)">
-          <div class="image-frame"><img src="../images/translation/translation-gallery-05.png" alt="Colorful English and Turkish translation concept focused on stories, connection and natural language" class="gallery-image" /><div class="image-overlay"><span class="view-project">View Project</span></div></div>
-          <h2 class="mt-5 text-xl font-black">Storytelling Across Languages</h2>
-          <p class="mt-2 leading-7 text-zinc-600">A people-first translation concept showing how stories retain emotion, clarity and impact when adapted naturally for another language.</p>
-          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Storytelling</span><span class="tag">Natural Language</span><span class="tag">Human-Centered</span></div>
-        </article>
+
+      <h2 class="mt-5 text-xl font-black">
+        Editorial Translation &amp; Clarity
+      </h2>
+
+      <p class="mt-2 leading-7 text-zinc-600">
+        A refined bilingual concept showing how precise translation
+        preserves meaning, tone and emotional connection across cultures.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="tag">Editorial</span>
+        <span class="tag">Clarity</span>
+        <span class="tag">Cultural Awareness</span>
       </div>
-    </section>
+    </article>
+
+    <article class="gallery-card cursor-pointer" onclick="openLightbox(1)">
+      <div class="image-frame">
+        <img
+          src="../images/translation/translation-gallery-02.png"
+          alt="Creative English and Turkish translation concept with bold colors, global communication and natural localization"
+          class="gallery-image"
+        />
+        <div class="image-overlay">
+          <span class="view-project">View Project</span>
+        </div>
+      </div>
+
+      <h2 class="mt-5 text-xl font-black">
+        Creative Cross-Cultural Messaging
+      </h2>
+
+      <p class="mt-2 leading-7 text-zinc-600">
+        A vibrant bilingual direction built around natural expression,
+        cultural relevance and communication that connects with real
+        audiences.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="tag">Creative</span>
+        <span class="tag">Localization</span>
+        <span class="tag">Audience Connection</span>
+      </div>
+    </article>
+
+    <article class="gallery-card cursor-pointer" onclick="openLightbox(2)">
+      <div class="image-frame">
+        <img
+          src="../images/translation/translation-gallery-03.png"
+          alt="Premium brand translation layout comparing English and Turkish messaging with focus on context, tone and meaning"
+          class="gallery-image"
+        />
+        <div class="image-overlay">
+          <span class="view-project">View Project</span>
+        </div>
+      </div>
+
+      <h2 class="mt-5 text-xl font-black">
+        Context-Aware Brand Translation
+      </h2>
+
+      <p class="mt-2 leading-7 text-zinc-600">
+        A premium brand-focused translation concept emphasizing context,
+        terminology and consistency rather than word-for-word conversion.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="tag">Brand Voice</span>
+        <span class="tag">Context</span>
+        <span class="tag">Consistency</span>
+      </div>
+    </article>
+
+    <article class="gallery-card cursor-pointer" onclick="openLightbox(3)">
+      <div class="image-frame">
+        <img
+          src="../images/translation/translation-gallery-04.png"
+          alt="Modern global translation concept showing English and Turkish brand communication across markets"
+          class="gallery-image"
+        />
+        <div class="image-overlay">
+          <span class="view-project">View Project</span>
+        </div>
+      </div>
+
+      <h2 class="mt-5 text-xl font-black">
+        Global Brand Voice Adaptation
+      </h2>
+
+      <p class="mt-2 leading-7 text-zinc-600">
+        A modern localization concept designed to carry brand personality,
+        values and persuasive impact across international markets.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="tag">Global</span>
+        <span class="tag">Brand Adaptation</span>
+        <span class="tag">International</span>
+      </div>
+    </article>
+
+    <article class="gallery-card cursor-pointer" onclick="openLightbox(4)">
+      <div class="image-frame">
+        <img
+          src="../images/translation/translation-gallery-05.png"
+          alt="Colorful English and Turkish translation concept focused on stories, connection and natural language"
+          class="gallery-image"
+        />
+        <div class="image-overlay">
+          <span class="view-project">View Project</span>
+        </div>
+      </div>
+
+      <h2 class="mt-5 text-xl font-black">
+        Storytelling Across Languages
+      </h2>
+
+      <p class="mt-2 leading-7 text-zinc-600">
+        A people-first translation concept showing how stories retain
+        emotion, clarity and impact when adapted naturally for another
+        language.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="tag">Storytelling</span>
+        <span class="tag">Natural Language</span>
+        <span class="tag">Human-Centered</span>
+      </div>
+    </article>
+
+  </div>
+
+</section>
   </main>
-  <footer class="border-t border-black/10 px-6 py-10"><div class="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-zinc-500 md:flex-row md:items-center md:justify-between"><span>UKE Content Studio</span>
-    <nav class="flex flex-wrap items-center gap-6">
-      <a href="../index.html#services" class="transition hover:text-white">Services</a>
-      <a href="../index.html#work" class="transition hover:text-white">Work</a>
-      <a href="../index.html#process" class="transition hover:text-white">Process</a>
-      <a href="../insights.html" class="transition hover:text-white">Insights</a>
-      <a href="../index.html#contact" class="transition hover:text-white">Contact</a>
-    </nav><span>© 2026 UKE Content Studio.</span></div></footer>
+  <footer class="border-t border-black/10 px-5 py-12 sm:px-6">
+
+  <div
+    class="mx-auto flex max-w-7xl flex-col gap-10 text-zinc-500 md:flex-row md:items-center md:justify-between"
+  >
+
+    <div class="max-w-sm">
+
+      <a href="../index.html" class="leading-none">
+
+        <span class="block text-sm font-black tracking-[0.32em] text-zinc-900">
+          UKE<span class="text-amber-500">.</span>
+        </span>
+
+        <span
+          class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500"
+        >
+          Content Studio
+        </span>
+
+      </a>
+
+      <p class="mt-6 leading-8 text-zinc-500">
+        Premium content, copywriting and localization support for digital
+        brands.
+      </p>
+
+    </div>
+
+    <nav
+      class="flex flex-wrap items-center gap-6 text-sm md:justify-center"
+    >
+
+      <a
+        href="../index.html#services"
+        class="transition hover:text-amber-600"
+      >
+        Services
+      </a>
+
+      <a
+        href="../index.html#work"
+        class="transition hover:text-amber-600"
+      >
+        Work
+      </a>
+
+      <a
+        href="../index.html#process"
+        class="transition hover:text-amber-600"
+      >
+        Process
+      </a>
+
+      <a
+        href="../insights.html"
+        class="transition hover:text-amber-600"
+      >
+        Insights
+      </a>
+
+      <a
+        href="../index.html#contact"
+        class="transition hover:text-amber-600"
+      >
+        Contact
+      </a>
+
+    </nav>
+
+    <div class="text-sm text-zinc-500 md:text-right">
+      © 2026 UKE Content Studio.
+    </div>
+
+  </div>
+
+</footer>
   <div id="lightbox" class="fixed inset-0 z-50 items-center justify-center bg-black/90 px-5 py-8" role="dialog" aria-modal="true" aria-label="English and Turkish translation gallery image viewer">
     <button type="button" onclick="closeLightbox()" class="absolute right-6 top-5 text-5xl font-light text-white transition hover:text-amber-300" aria-label="Close gallery">×</button>
     <button type="button" onclick="previousImage()" class="absolute left-4 top-1/2 -translate-y-1/2 text-5xl text-white transition hover:text-amber-300 md:left-8" aria-label="Previous image">‹</button>

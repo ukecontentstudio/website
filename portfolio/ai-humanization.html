@@ -36,50 +36,163 @@
 <body class="bg-zinc-950 text-white antialiased">
   <main class="min-h-screen bg-[radial-gradient(circle_at_50%_0%,rgba(251,191,36,0.16),transparent_32%),linear-gradient(to_bottom,#09090b,#050505)]">
 
-    <header class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-zinc-950/70 backdrop-blur-xl">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <a href="../index.html" class="leading-none">
-          <span class="block text-sm font-black tracking-[0.32em] text-white">UKE<span class="text-amber-400">.</span></span>
-          <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">Content Studio</span>
-        </a>
+    <header class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 sm:py-5">
 
-        <nav class="hidden items-center gap-8 text-sm font-medium text-zinc-400 md:flex">
-          <a href="../index.html#services" class="transition hover:text-white">Services</a>
-          <a href="../index.html#work" class="transition hover:text-white">Work</a>
-          <a href="../index.html#process" class="transition hover:text-white">Process</a>
-          <a href="../insights.html" class="transition hover:text-white">Insights</a>
-          <a href="../index.html#contact" class="transition hover:text-white">Contact</a>
-        </nav>
+    <a href="../index.html" class="relative z-50 leading-none">
+      <span class="block text-sm font-black tracking-[0.32em] text-white">
+        UKE<span class="text-amber-400">.</span>
+      </span>
 
-        <a href="../index.html#contact" class="hidden rounded-full border border-amber-400/40 px-5 py-2 text-sm font-bold text-amber-300 transition hover:bg-amber-400 hover:text-zinc-950 md:inline-flex">
-          Start a Project
-        </a>
-      </div>
-    </header>
+      <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+        Content Studio
+      </span>
+    </a>
 
-    <section class="px-6 pb-24 pt-40">
-      <div class="mx-auto max-w-7xl">
-        <a href="../index.html#work" class="text-sm font-bold text-amber-300 transition hover:text-amber-200">
-          ← Back to Work
-        </a>
+    <nav class="hidden items-center gap-8 text-sm font-medium text-zinc-400 md:flex">
+      <a href="../index.html#services" class="transition hover:text-white">
+        Services
+      </a>
 
-        <p class="mt-16 text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">
-          CASE STUDY
-        </p>
+      <a href="../index.html#work" class="transition hover:text-white">
+        Work
+      </a>
 
-        <h1 class="mt-6 max-w-5xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
-          AI content humanization for natural brand communication.
-        </h1>
+      <a href="../index.html#process" class="transition hover:text-white">
+        Process
+      </a>
 
-        <p class="mt-8 max-w-3xl text-xl leading-9 text-zinc-400">
-          A content refinement direction focused on turning AI-generated drafts into natural, credible and brand-aligned writing.
-        </p>
-      </div>
-    </section>
-    <section class="px-6 pb-20 pt-10">
+      <a href="../insights.html" class="transition hover:text-white">
+        Insights
+      </a>
+
+      <a href="../index.html#contact" class="transition hover:text-white">
+        Contact
+      </a>
+    </nav>
+
+    <a
+      href="../index.html#contact"
+      class="hidden rounded-full border border-amber-400/40 px-5 py-2 text-sm font-bold text-amber-300 transition hover:bg-amber-400 hover:text-zinc-950 md:inline-flex"
+    >
+      Start a Project
+    </a>
+
+    <button
+      id="mobile-menu-button"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      class="relative z-50 flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white transition hover:border-amber-400/50 hover:text-amber-300 md:hidden"
+    >
+      <svg
+        id="menu-open-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        class="h-5 w-5"
+      >
+        <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+      </svg>
+
+      <svg
+        id="menu-close-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        class="hidden h-5 w-5"
+      >
+        <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="hidden border-t border-white/10 bg-zinc-950/95 px-5 pb-6 pt-4 backdrop-blur-xl md:hidden"
+  >
+    <nav class="mx-auto flex max-w-7xl flex-col">
+
+      <a
+        href="../index.html#services"
+        class="border-b border-white/10 py-4 text-base font-semibold text-zinc-300 transition hover:text-amber-300"
+      >
+        Services
+      </a>
+
+      <a
+        href="../index.html#work"
+        class="border-b border-white/10 py-4 text-base font-semibold text-zinc-300 transition hover:text-amber-300"
+      >
+        Work
+      </a>
+
+      <a
+        href="../index.html#process"
+        class="border-b border-white/10 py-4 text-base font-semibold text-zinc-300 transition hover:text-amber-300"
+      >
+        Process
+      </a>
+
+      <a
+        href="../insights.html"
+        class="border-b border-white/10 py-4 text-base font-semibold text-zinc-300 transition hover:text-amber-300"
+      >
+        Insights
+      </a>
+
+      <a
+        href="../index.html#contact"
+        class="border-b border-white/10 py-4 text-base font-semibold text-zinc-300 transition hover:text-amber-300"
+      >
+        Contact
+      </a>
+
+      <a
+        href="../index.html#contact"
+        class="mt-6 rounded-full bg-amber-400 px-6 py-4 text-center text-sm font-black text-zinc-950 transition hover:bg-amber-300"
+      >
+        Start a Project
+      </a>
+
+    </nav>
+  </div>
+</header>
+
+    <section class="px-5 pb-16 pt-32 sm:px-6 sm:pb-20 sm:pt-36 lg:pb-24 lg:pt-40">
   <div class="mx-auto max-w-7xl">
 
-    <div class="overflow-hidden rounded-[2rem]">
+    <a
+      href="../index.html#work"
+      class="text-sm font-bold text-amber-300 transition hover:text-amber-200"
+    >
+      ← Back to Work
+    </a>
+
+    <p class="mt-12 text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:mt-16 sm:text-sm sm:tracking-[0.35em]">
+      CASE STUDY
+    </p>
+
+    <h1 class="mt-6 max-w-5xl text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+      AI content humanization for natural brand communication.
+    </h1>
+
+    <p class="mt-8 max-w-3xl text-base leading-8 text-zinc-400 sm:text-lg md:text-xl md:leading-9">
+      A content refinement direction focused on turning AI-generated drafts into natural, credible and brand-aligned writing.
+    </p>
+
+  </div>
+</section>
+    <section class="px-5 pb-16 pt-4 sm:px-6 sm:pb-20 sm:pt-8">
+  <div class="mx-auto max-w-7xl">
+
+    <div class="overflow-hidden rounded-3xl sm:rounded-[2rem]">
       <img
         src="../images/ai-humanization/ai-humanization-hero.png"
         alt="AI Content Humanization Hero"
@@ -87,10 +200,10 @@
       />
     </div>
 
-    <div class="mt-10 flex justify-center">
+    <div class="mt-8 flex justify-center sm:mt-10">
       <a
         href="ai-humanization-gallery.html"
-        class="rounded-full border border-amber-400/60 bg-white/5 px-7 py-3 text-sm font-bold text-amber-300 transition duration-300 hover:-translate-y-0.5 hover:bg-amber-400 hover:text-zinc-950"
+        class="w-full rounded-full border border-amber-400/60 bg-white/5 px-7 py-3 text-center text-sm font-bold text-amber-300 transition duration-300 hover:-translate-y-0.5 hover:bg-amber-400 hover:text-zinc-950 sm:w-auto"
       >
         View Gallery →
       </a>
@@ -99,193 +212,376 @@
   </div>
 </section>
 
-    <section class="border-t border-white/10 px-6 py-20">
-      <div class="mx-auto grid max-w-7xl gap-20 lg:grid-cols-[2fr_1fr]">
+    <section class="border-t border-white/10 px-5 py-16 sm:px-6 sm:py-20 lg:py-24">
+  <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[2fr_1fr] lg:gap-20">
+
+    <div>
+
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
+        OVERVIEW
+      </p>
+
+      <h2 class="mt-6 text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
+        Making AI-assisted content sound human.
+      </h2>
+
+      <p class="mt-8 text-base leading-8 text-zinc-400 sm:text-lg md:text-xl md:leading-9">
+        This project demonstrates how AI-generated drafts can be refined into content that feels natural,
+        trustworthy and aligned with a brand’s voice.
+      </p>
+
+      <p class="mt-8 leading-8 text-zinc-400">
+        The process focuses on tone, structure, clarity, credibility and removing generic AI patterns from the final copy.
+      </p>
+
+    </div>
+
+    <div class="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm sm:p-8">
+
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-500 sm:text-sm">
+        PROJECT
+      </p>
+
+      <div class="mt-8 space-y-8">
+
         <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">OVERVIEW</p>
-
-          <h2 class="mt-6 text-4xl font-black leading-tight md:text-5xl">
-            Making AI-assisted content sound human.
-          </h2>
-
-          <p class="mt-8 text-xl leading-9 text-zinc-400">
-            This project demonstrates how AI-generated drafts can be refined into content that feels natural,
-            trustworthy and aligned with a brand’s voice.
-          </p>
-
-          <p class="mt-8 leading-8 text-zinc-400">
-            The process focuses on tone, structure, clarity, credibility and removing generic AI patterns from the final copy.
+          <p class="text-sm text-zinc-500">Service</p>
+          <p class="mt-2 text-lg font-bold text-zinc-900">
+            AI Content Humanization
           </p>
         </div>
 
-        <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-          <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">PROJECT</p>
-
-          <div class="mt-8 space-y-8">
-            <div>
-              <p class="text-sm text-zinc-500">Service</p>
-              <p class="mt-2 text-lg font-bold text-white">AI Content Humanization</p>
-            </div>
-
-            <div>
-              <p class="text-sm text-zinc-500">Content Type</p>
-              <p class="mt-2 text-lg font-bold text-white">AI Drafts • Website Copy • Articles</p>
-            </div>
-
-            <div>
-              <p class="text-sm text-zinc-500">Focus</p>
-              <p class="mt-2 text-lg font-bold text-white">Natural Voice • Clarity • Trust</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto grid max-w-7xl gap-20 lg:grid-cols-[1fr_2fr]">
         <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">CHALLENGE</p>
-
-          <h2 class="mt-6 text-4xl font-black leading-tight md:text-5xl">
-            Removing the generic AI feeling.
-          </h2>
+          <p class="text-sm text-zinc-500">Content Type</p>
+          <p class="mt-2 text-lg font-bold text-zinc-900">
+            AI Drafts • Website Copy • Articles
+          </p>
         </div>
 
-        <div class="grid gap-6 md:grid-cols-2">
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <h3 class="text-2xl font-extrabold tracking-tight text-white">Robotic tone</h3>
-            <p class="mt-5 leading-8 text-zinc-400">AI drafts often sound polished but emotionally flat, repetitive or overly generic.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <h3 class="text-2xl font-extrabold tracking-tight text-white">Weak brand voice</h3>
-            <p class="mt-5 leading-8 text-zinc-400">Generic wording can make the content feel disconnected from the brand’s actual identity.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <h3 class="text-2xl font-extrabold tracking-tight text-white">Low credibility</h3>
-            <p class="mt-5 leading-8 text-zinc-400">AI text needs careful editing to sound trustworthy, specific and publication-ready.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <h3 class="text-2xl font-extrabold tracking-tight text-white">Poor readability</h3>
-            <p class="mt-5 leading-8 text-zinc-400">Long sentences, repeated patterns and vague phrasing can reduce reader engagement.</p>
-          </div>
+        <div>
+          <p class="text-sm text-zinc-500">Focus</p>
+          <p class="mt-2 text-lg font-bold text-zinc-900">
+            Natural Voice • Clarity • Trust
+          </p>
         </div>
+
       </div>
-    </section>
 
-    <section class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto max-w-7xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">SOLUTION</p>
+    </div>
 
-        <h2 class="mt-6 max-w-4xl text-4xl font-black leading-tight md:text-5xl">
-          A human editing layer that improves clarity, tone and trust.
-        </h2>
+  </div>
+</section>
 
-        <div class="mt-16 grid gap-8 md:grid-cols-3">
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-amber-400">Review</p>
-            <h3 class="mt-6 text-2xl font-extrabold">AI Pattern Check</h3>
-            <p class="mt-5 leading-8 text-zinc-400">Identify repeated structures, vague language and robotic phrasing.</p>
-          </div>
+    <section class="border-t border-white/10 px-5 py-16 sm:px-6 sm:py-20 lg:py-24">
+  <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_2fr] lg:gap-20">
 
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-amber-400">Rewrite</p>
-            <h3 class="mt-6 text-2xl font-extrabold">Natural Voice</h3>
-            <p class="mt-5 leading-8 text-zinc-400">Rewrite content with smoother flow, stronger wording and a more human tone.</p>
-          </div>
+    <div>
 
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-amber-400">Polish</p>
-            <h3 class="mt-6 text-2xl font-extrabold">Final Editing</h3>
-            <p class="mt-5 leading-8 text-zinc-400">Improve readability, credibility and brand consistency before delivery.</p>
-          </div>
-        </div>
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
+        CHALLENGE
+      </p>
+
+      <h2 class="mt-6 text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
+        Removing the generic AI feeling.
+      </h2>
+
+    </div>
+
+    <div class="grid gap-5 sm:gap-6 md:grid-cols-2">
+
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm sm:p-8">
+        <h3 class="text-xl font-extrabold tracking-tight text-zinc-900 sm:text-2xl">
+          Robotic Tone
+        </h3>
+
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          AI drafts often sound polished but emotionally flat, repetitive or overly generic.
+        </p>
       </div>
-    </section>
 
-    <section class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto max-w-7xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">RESULTS</p>
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm sm:p-8">
+        <h3 class="text-xl font-extrabold tracking-tight text-zinc-900 sm:text-2xl">
+          Weak Brand Voice
+        </h3>
 
-        <h2 class="mt-6 max-w-4xl text-4xl font-black leading-tight md:text-5xl">
-          Designed to turn AI drafts into brand-ready content.
-        </h2>
-
-        <div class="mt-16 grid gap-8 md:grid-cols-4">
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-10 text-center transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <h3 class="text-5xl font-black text-amber-400">Tone</h3>
-            <p class="mt-5 leading-8 text-zinc-400">More natural and brand-aligned communication.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-10 text-center transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <h3 class="text-5xl font-black text-amber-400">Trust</h3>
-            <p class="mt-5 leading-8 text-zinc-400">Content that feels credible and human-edited.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-10 text-center transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <h3 class="text-5xl font-black text-amber-400">Flow</h3>
-            <p class="mt-5 leading-8 text-zinc-400">Improved structure, clarity and readability.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-10 text-center transition duration-300 hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/[0.05]">
-            <h3 class="text-5xl font-black text-amber-400">Ready</h3>
-            <p class="mt-5 leading-8 text-zinc-400">Final copy prepared for publishing or client use.</p>
-          </div>
-        </div>
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          Generic wording can make the content feel disconnected from the brand’s actual identity.
+        </p>
       </div>
-    </section>
 
-    <section class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto max-w-7xl rounded-[2rem] border border-white/10 bg-white/[0.03] p-14 text-center">
-        <p class="text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">NEXT PROJECT</p>
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm sm:p-8">
+        <h3 class="text-xl font-extrabold tracking-tight text-zinc-900 sm:text-2xl">
+          Low Credibility
+        </h3>
 
-        <h2 class="mx-auto mt-6 max-w-4xl text-4xl font-black leading-tight md:text-5xl">
-          Need AI content that sounds natural and trustworthy?
-        </h2>
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          AI text needs careful editing to sound trustworthy, specific and publication-ready.
+        </p>
+      </div>
 
-        <p class="mx-auto mt-8 max-w-3xl text-xl leading-9 text-zinc-400">
-          AI drafts can be a starting point. The final content should still feel clear, human and brand-safe.
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm sm:p-8">
+        <h3 class="text-xl font-extrabold tracking-tight text-zinc-900 sm:text-2xl">
+          Poor Readability
+        </h3>
+
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          Long sentences, repeated patterns and vague phrasing can reduce reader engagement.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <section class="border-t border-white/10 px-5 py-16 sm:px-6 sm:py-20 lg:py-24">
+  <div class="mx-auto max-w-7xl">
+
+    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
+      SOLUTION
+    </p>
+
+    <h2 class="mt-6 max-w-4xl text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
+      A human editing layer that improves clarity, tone and trust.
+    </h2>
+
+    <div class="mt-10 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-3 lg:mt-16 lg:gap-8">
+
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm sm:p-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-500 sm:text-sm">
+          Review
         </p>
 
-        <div class="mt-12 flex flex-col justify-center gap-4 sm:flex-row">
-          <a href="../index.html#contact" class="rounded-full bg-amber-400 px-8 py-4 text-sm font-black text-zinc-950 transition hover:-translate-y-0.5 hover:bg-amber-300">
-            Start a Project
-          </a>
+        <h3 class="mt-5 text-xl font-extrabold text-zinc-900 sm:mt-6 sm:text-2xl">
+          AI Pattern Check
+        </h3>
 
-          <a href="../index.html#work" class="rounded-full border border-white/10 px-8 py-4 text-sm font-black transition hover:-translate-y-0.5 hover:border-amber-400/60 hover:bg-white/5">
-            Back to Portfolio
-          </a>
-        </div>
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          Identify repeated structures, vague language and robotic phrasing.
+        </p>
       </div>
-    </section>
 
-    <footer class="border-t border-white/10 bg-zinc-950 px-6 py-12">
-      <div class="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
-        <div>
-          <a href="../index.html" class="leading-none">
-            <span class="block text-sm font-black tracking-[0.32em] text-white">UKE<span class="text-amber-400">.</span></span>
-            <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">Content Studio</span>
-          </a>
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm sm:p-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-500 sm:text-sm">
+          Rewrite
+        </p>
 
-          <p class="mt-5 max-w-md text-sm leading-6 text-zinc-500">
-            Premium content, copywriting and localization support for digital brands.
-          </p>
-        </div>
+        <h3 class="mt-5 text-xl font-extrabold text-zinc-900 sm:mt-6 sm:text-2xl">
+          Natural Voice
+        </h3>
 
-        <div class="flex flex-wrap gap-5 text-sm text-zinc-500">
-          <a href="../index.html#services" class="transition hover:text-white">Services</a>
-          <a href="../index.html#work" class="transition hover:text-white">Work</a>
-          <a href="../index.html#process" class="transition hover:text-white">Process</a>
-          <a href="../insights.html" class="transition hover:text-white">Insights</a>
-          <a href="../index.html#contact" class="transition hover:text-white">Contact</a>
-        </div>
-
-        <p class="text-sm text-zinc-600">© 2026 UKE Content Studio.</p>
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          Rewrite content with smoother flow, stronger wording and a more human tone.
+        </p>
       </div>
-    </footer>
+
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm sm:p-8">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-500 sm:text-sm">
+          Polish
+        </p>
+
+        <h3 class="mt-5 text-xl font-extrabold text-zinc-900 sm:mt-6 sm:text-2xl">
+          Final Editing
+        </h3>
+
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          Improve readability, credibility and brand consistency before delivery.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <section class="border-t border-white/10 px-5 py-16 sm:px-6 sm:py-20 lg:py-24">
+  <div class="mx-auto max-w-7xl">
+
+    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
+      RESULTS
+    </p>
+
+    <h2 class="mt-6 max-w-4xl text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
+      Designed to turn AI drafts into brand-ready content.
+    </h2>
+
+    <div class="mt-10 grid gap-5 sm:mt-12 sm:gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-8">
+
+      <div class="min-w-0 rounded-3xl border border-zinc-200 bg-zinc-50 p-6 text-center shadow-sm sm:p-8 lg:px-5 xl:p-8">
+        <h3 class="break-words text-3xl font-black leading-tight text-amber-500 sm:text-4xl lg:text-3xl xl:text-4xl">
+          Tone
+        </h3>
+
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          More natural and brand-aligned communication.
+        </p>
+      </div>
+
+      <div class="min-w-0 rounded-3xl border border-zinc-200 bg-zinc-50 p-6 text-center shadow-sm sm:p-8 lg:px-5 xl:p-8">
+        <h3 class="break-words text-3xl font-black leading-tight text-amber-500 sm:text-4xl lg:text-3xl xl:text-4xl">
+          Trust
+        </h3>
+
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          Content that feels credible and human-edited.
+        </p>
+      </div>
+
+      <div class="min-w-0 rounded-3xl border border-zinc-200 bg-zinc-50 p-6 text-center shadow-sm sm:p-8 lg:px-5 xl:p-8">
+        <h3 class="break-words text-3xl font-black leading-tight text-amber-500 sm:text-4xl lg:text-3xl xl:text-4xl">
+          Flow
+        </h3>
+
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          Improved structure, clarity and readability.
+        </p>
+      </div>
+
+      <div class="min-w-0 rounded-3xl border border-zinc-200 bg-zinc-50 p-6 text-center shadow-sm sm:p-8 lg:px-5 xl:p-8">
+        <h3 class="break-words text-3xl font-black leading-tight text-amber-500 sm:text-4xl lg:text-3xl xl:text-4xl">
+          Ready
+        </h3>
+
+        <p class="mt-4 leading-8 text-zinc-600 sm:mt-5">
+          Final copy prepared for publishing or client use.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <section class="border-t border-white/10 px-5 py-16 sm:px-6 sm:py-20 lg:py-24">
+  <div class="mx-auto max-w-7xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 text-center sm:rounded-[2rem] sm:p-10 lg:p-14">
+
+    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
+      NEXT PROJECT
+    </p>
+
+    <h2 class="mx-auto mt-6 max-w-4xl text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
+      Need AI content that sounds natural and trustworthy?
+    </h2>
+
+    <p class="mx-auto mt-6 max-w-3xl text-base leading-8 text-zinc-400 sm:mt-8 sm:text-lg md:text-xl md:leading-9">
+      AI drafts can be a starting point. The final content should still feel clear, human and brand-safe.
+    </p>
+
+    <div class="mt-10 flex flex-col justify-center gap-4 sm:mt-12 sm:flex-row">
+
+      <a
+        href="../index.html#contact"
+        class="w-full rounded-full bg-amber-400 px-8 py-4 text-center text-sm font-black text-zinc-950 transition hover:-translate-y-0.5 hover:bg-amber-300 sm:w-auto"
+      >
+        Start a Project
+      </a>
+
+      <a
+        href="../index.html#work"
+        class="w-full rounded-full border border-white/10 px-8 py-4 text-center text-sm font-black transition hover:-translate-y-0.5 hover:border-amber-400/60 hover:bg-white/5 sm:w-auto"
+      >
+        Back to Portfolio
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+    <footer class="border-t border-white/10 bg-zinc-950 px-5 py-10 sm:px-6 sm:py-12">
+  <div class="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+
+    <div class="text-center lg:text-left">
+      <a href="../index.html" class="inline-block leading-none">
+        <span class="block text-sm font-black tracking-[0.32em] text-white">
+          UKE<span class="text-amber-400">.</span>
+        </span>
+
+        <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+          Content Studio
+        </span>
+      </a>
+
+      <p class="mx-auto mt-5 max-w-md text-sm leading-6 text-zinc-500 lg:mx-0">
+        Premium content, copywriting and localization support for digital brands.
+      </p>
+    </div>
+
+    <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm text-zinc-500">
+      <a
+        href="../index.html#services"
+        class="transition hover:text-white"
+      >
+        Services
+      </a>
+
+      <a
+        href="../index.html#work"
+        class="transition hover:text-white"
+      >
+        Work
+      </a>
+
+      <a
+        href="../index.html#process"
+        class="transition hover:text-white"
+      >
+        Process
+      </a>
+
+      <a
+        href="../insights.html"
+        class="transition hover:text-white"
+      >
+        Insights
+      </a>
+
+      <a
+        href="../index.html#contact"
+        class="transition hover:text-white"
+      >
+        Contact
+      </a>
+    </nav>
+
+    <p class="text-center text-sm text-zinc-600 lg:text-right">
+      © 2026 UKE Content Studio.
+    </p>
+
+  </div>
+</footer>
 
   </main>
+  <script>
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuOpenIcon = document.getElementById("menu-open-icon");
+  const menuCloseIcon = document.getElementById("menu-close-icon");
+
+  mobileMenuButton.addEventListener("click", () => {
+    const isOpen = !mobileMenu.classList.contains("hidden");
+
+    mobileMenu.classList.toggle("hidden");
+    menuOpenIcon.classList.toggle("hidden");
+    menuCloseIcon.classList.toggle("hidden");
+
+    mobileMenuButton.setAttribute("aria-expanded", String(!isOpen));
+    mobileMenuButton.setAttribute(
+      "aria-label",
+      isOpen ? "Open navigation menu" : "Close navigation menu"
+    );
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuOpenIcon.classList.remove("hidden");
+      menuCloseIcon.classList.add("hidden");
+
+      mobileMenuButton.setAttribute("aria-expanded", "false");
+      mobileMenuButton.setAttribute("aria-label", "Open navigation menu");
+    });
+  });
+</script>
 </body>
 </html>

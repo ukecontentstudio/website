@@ -196,18 +196,7 @@
         #fffdfa;
     }
 
-    .check-card {
-      transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
-    }
-
-    .check-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(217, 119, 6, 0.45);
-      box-shadow: 0 20px 40px rgba(24, 24, 27, 0.08);
-    }
+  
 
     #reading-progress {
       position: fixed;
@@ -225,10 +214,602 @@
 
   <div id="reading-progress"></div>
 
-  <header class="sticky top-0 z-50 border-b border-black/10 bg-[#F7F5F2]/95 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+  <header class="fixed left-0 top-0 z-50 w-full border-b border-black/10 bg-[#F7F5F2]/95 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 sm:py-5">
 
-      <a href="../index.html" class="leading-none">
+    <a href="../index.html" class="relative z-50 leading-none">
+      <span class="block text-sm font-black tracking-[0.32em]">
+        UKE<span class="text-amber-500">.</span>
+      </span>
+
+      <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+        Content Studio
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-8 text-sm font-semibold text-zinc-600 md:flex">
+
+      <a
+        href="../index.html#services"
+        class="transition hover:text-amber-600"
+      >
+        Services
+      </a>
+
+      <a
+        href="../index.html#work"
+        class="transition hover:text-amber-600"
+      >
+        Work
+      </a>
+
+      <a
+        href="../insights.html"
+        class="font-semibold text-amber-700"
+      >
+        Insights
+      </a>
+
+      <a
+        href="../index.html#contact"
+        class="transition hover:text-amber-600"
+      >
+        Contact
+      </a>
+
+    </nav>
+
+    <a
+      href="../index.html#contact"
+      class="hidden rounded-full border border-amber-600/40 px-5 py-2 text-sm font-black text-amber-700 transition hover:bg-amber-500 hover:text-zinc-950 md:inline-flex"
+    >
+      Start a Project
+    </a>
+
+    <button
+      id="mobile-menu-button"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      class="relative z-50 flex h-11 w-11 items-center justify-center rounded-full border border-black/10 text-zinc-900 transition hover:border-amber-500/50 hover:text-amber-700 md:hidden"
+    >
+      <svg
+        id="menu-open-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        class="h-5 w-5"
+      >
+        <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+      </svg>
+
+      <svg
+        id="menu-close-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        class="hidden h-5 w-5"
+      >
+        <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="hidden border-t border-black/10 bg-[#F7F5F2]/95 px-5 pb-6 pt-4 backdrop-blur-xl md:hidden"
+  >
+
+    <nav class="mx-auto flex max-w-7xl flex-col">
+
+      <a
+        href="../index.html#services"
+        class="border-b border-black/10 py-4 text-base font-semibold text-zinc-700 transition hover:text-amber-700"
+      >
+        Services
+      </a>
+
+      <a
+        href="../index.html#work"
+        class="border-b border-black/10 py-4 text-base font-semibold text-zinc-700 transition hover:text-amber-700"
+      >
+        Work
+      </a>
+
+      <a
+        href="../insights.html"
+        class="border-b border-black/10 py-4 text-base font-semibold text-amber-700"
+      >
+        Insights
+      </a>
+
+      <a
+        href="../index.html#contact"
+        class="border-b border-black/10 py-4 text-base font-semibold text-zinc-700 transition hover:text-amber-700"
+      >
+        Contact
+      </a>
+
+      <a
+        href="../index.html#contact"
+        class="mt-6 rounded-full bg-amber-500 px-6 py-4 text-center text-sm font-black text-zinc-950 transition hover:bg-amber-400"
+      >
+        Start a Project
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+  <main>
+
+    <section class="px-5 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:pb-24 lg:pt-36">
+
+  <div class="mx-auto max-w-7xl">
+
+    <a
+      href="../insights.html"
+      class="inline-flex items-center text-sm font-bold text-amber-700 transition hover:text-amber-600"
+    >
+      ← Back to Insights
+    </a>
+
+    <div class="mt-10 max-w-5xl sm:mt-12 lg:mt-14">
+
+      <div class="flex flex-wrap items-center gap-3">
+
+        <span
+          class="rounded-full border border-amber-600/25 bg-amber-500/10 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-amber-700"
+        >
+          Email Copywriting
+        </span>
+
+        <span class="text-sm font-semibold text-zinc-500">
+          8 min read
+        </span>
+
+        <span class="text-zinc-300">•</span>
+
+        <span class="text-sm font-semibold text-zinc-500">
+          UKE Content Studio
+        </span>
+
+      </div>
+
+      <h1
+        class="mt-7 text-4xl font-black leading-[1.05] tracking-tight text-zinc-950 sm:text-5xl md:text-6xl lg:text-7xl"
+      >
+        Why Some Emails Get Opened, Read and Acted On
+      </h1>
+
+      <p
+        class="mt-7 max-w-4xl text-base leading-8 text-zinc-600 sm:text-lg sm:leading-8 md:text-xl md:leading-9"
+      >
+        Effective email copy earns attention quickly, respects the reader’s
+        time and makes the next step feel clear, relevant and worthwhile.
+      </p>
+
+    </div>
+
+    <div
+      class="article-image mt-10 overflow-hidden rounded-[2rem] border border-black/10 bg-white sm:mt-12 lg:mt-14"
+    >
+      <img
+        src="../images/insights/email-copywriting/email-copywriting-hero.png"
+        alt="Email copywriting designed to improve opens, engagement and conversion"
+        class="h-auto w-full object-contain"
+      />
+    </div>
+
+  </div>
+
+</section>
+
+    <section class="px-5 pb-16 sm:px-6 sm:pb-20 lg:pb-24">
+
+  <div
+    class="article-shell mx-auto max-w-7xl rounded-[1.5rem] border border-black/10 bg-[#FFFEFC] px-5 py-10 sm:rounded-[2rem] sm:px-8 sm:py-12 md:px-12 lg:px-16"
+  >
+
+    <div class="grid gap-12 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-16">
+
+      <aside class="min-w-0 lg:sticky lg:top-28 lg:self-start">
+
+        <p
+          class="text-xs font-black uppercase tracking-[0.25em] text-amber-700"
+        >
+          In This Article
+        </p>
+
+        <nav class="mt-5">
+
+          <a href="#why-emails-are-ignored" class="toc-link">
+            Why emails are ignored
+          </a>
+
+          <a href="#subject-lines" class="toc-link">
+            Write stronger subject lines
+          </a>
+
+          <a href="#opening-lines" class="toc-link">
+            Make the opening count
+          </a>
+
+          <a href="#email-structure" class="toc-link">
+            Build a clear structure
+          </a>
+
+          <a href="#calls-to-action" class="toc-link">
+            Create better calls to action
+          </a>
+
+          <a href="#email-checklist" class="toc-link">
+            Final email checklist
+          </a>
+
+        </nav>
+
+      </aside>
+
+      <article class="article-copy min-w-0 break-words">
+
+        <p class="mt-0">
+          Most inboxes are crowded. Readers make rapid decisions about what to
+          open, what to skim and what to delete. That means an email does not
+          earn attention simply because it was sent. Every element must justify
+          the reader’s next second.
+        </p>
+
+        <p>
+          Strong email copy is not built on clever wording alone. It combines
+          relevance, timing, structure, trust and a clear reason to act.
+        </p>
+
+        <h2 id="why-emails-are-ignored">
+          Why many marketing emails are ignored
+        </h2>
+
+        <p>
+          Emails often fail because they begin from the sender’s perspective
+          instead of the reader’s. The message focuses on what the company wants
+          to announce rather than what the recipient needs to understand.
+        </p>
+
+        <p>Common problems include:</p>
+
+        <ul>
+          <li>Subject lines that sound generic or exaggerated.</li>
+          <li>Long introductions before the message becomes useful.</li>
+          <li>Too many competing ideas in one email.</li>
+          <li>Weak personalization that feels automated.</li>
+          <li>Calls to action that are unclear or low-value.</li>
+          <li>Heavy design that distracts from the core message.</li>
+        </ul>
+
+        <div
+          class="article-image my-10 overflow-hidden rounded-[1.5rem] border border-black/10 bg-zinc-100 sm:my-12 sm:rounded-[1.75rem] lg:my-14"
+        >
+          <img
+            src="../images/insights/email-copywriting/email-copywriting-content-01.png"
+            alt="Email copywriting process focused on clarity, structure and persuasive messaging"
+            loading="lazy"
+            class="h-auto w-full object-contain"
+          />
+        </div>
+
+        <h2 id="subject-lines">
+          Write subject lines that create relevant curiosity
+        </h2>
+
+        <p>
+          The subject line has one job: earn the open from the right reader. It
+          should communicate enough value to feel relevant without trying to
+          explain the entire email.
+        </p>
+
+        <h3>Be specific</h3>
+
+        <p>
+          Clear subject lines usually outperform vague promises because readers
+          understand what they are being invited to consider.
+        </p>
+
+        <h3>Avoid empty urgency</h3>
+
+        <p>
+          Urgency is useful only when it is real. Constant pressure weakens
+          trust and trains subscribers to ignore future messages.
+        </p>
+
+        <h3>Match the email content</h3>
+
+        <p>
+          A strong subject line should not create expectations the body cannot
+          satisfy. Misleading opens damage long-term engagement.
+        </p>
+
+        <h3>Use curiosity carefully</h3>
+
+        <p>
+          Curiosity works best when it is connected to a meaningful benefit,
+          problem or insight—not when the message becomes confusing.
+        </p>
+
+        <div
+          class="quote-block mt-10 rounded-r-[1.25rem] px-5 py-7 sm:mt-12 sm:rounded-r-[1.5rem] sm:px-7 sm:py-8 md:px-10 lg:mt-14"
+        >
+          <p
+            class="m-0 text-xl font-black leading-8 text-zinc-900 sm:text-2xl sm:leading-10"
+          >
+            The subject line earns the open. The body must prove that opening
+            the email was the right decision.
+          </p>
+        </div>
+
+        <h2 id="opening-lines">
+          Make the opening immediately useful
+        </h2>
+
+        <p>
+          The first lines should confirm relevance. Avoid long greetings,
+          unnecessary background and statements the reader already understands.
+        </p>
+
+        <p>A strong opening often does one of the following:</p>
+
+        <ul>
+          <li>Names a specific problem.</li>
+          <li>Introduces a useful opportunity.</li>
+          <li>Shares a meaningful result or observation.</li>
+          <li>Connects directly to the reader’s context.</li>
+          <li>Explains why the message matters now.</li>
+        </ul>
+
+        <p>
+          The reader should understand the direction of the email within a few
+          seconds.
+        </p>
+
+        <div
+          class="article-image my-10 overflow-hidden rounded-[1.5rem] border border-black/10 bg-zinc-100 sm:my-12 sm:rounded-[1.75rem] lg:my-14"
+        >
+          <img
+            src="../images/insights/email-copywriting/email-copywriting-content-02.png"
+            alt="Email strategy system showing audience, subject line, value and clear call to action"
+            loading="lazy"
+            class="h-auto w-full object-contain"
+          />
+        </div>
+
+        <h2 id="email-structure">
+          Build the email around one clear message
+        </h2>
+
+        <p>
+          Effective emails usually have one dominant purpose. When too many
+          goals compete, the message becomes harder to understand and easier to
+          ignore.
+        </p>
+
+        <h3>Lead with relevance</h3>
+
+        <p>
+          Explain why the message matters to this audience before describing
+          the offer, update or request.
+        </p>
+
+        <h3>Develop the value</h3>
+
+        <p>
+          Show the practical benefit. Explain what changes for the reader and
+          why that change is meaningful.
+        </p>
+
+        <h3>Reduce unnecessary detail</h3>
+
+        <p>
+          Include enough information to support the decision. Move secondary
+          details to the landing page when possible.
+        </p>
+
+        <h3>Use visual hierarchy</h3>
+
+        <p>
+          Short paragraphs, descriptive subheadings and carefully placed
+          emphasis help readers understand the email quickly.
+        </p>
+
+        <h2 id="calls-to-action">
+          Create calls to action that feel clear and valuable
+        </h2>
+
+        <p>
+          The call to action should explain what happens next. Generic labels
+          such as <strong>“Click Here”</strong> provide less information than
+          specific actions such as <strong>“View the Guide”</strong>,
+          <strong>“Compare the Plans”</strong> or
+          <strong>“Start Your Application.”</strong>
+        </p>
+
+        <p>Strong calls to action are:</p>
+
+        <ul>
+          <li>Specific about the next step.</li>
+          <li>Consistent with the email’s promise.</li>
+          <li>Easy to find without overwhelming the page.</li>
+          <li>Appropriate for the reader’s level of commitment.</li>
+          <li>Supported by enough context to feel safe and worthwhile.</li>
+        </ul>
+
+        <p>
+          A single primary action usually creates more clarity than several
+          equally prominent buttons.
+        </p>
+
+        <h2 id="email-checklist">
+          Final email copywriting checklist
+        </h2>
+
+        <div class="mt-8 grid gap-5 sm:mt-10 sm:grid-cols-2">
+
+          <div class="min-w-0 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-7">
+            <p class="m-0 break-words text-lg font-black !text-white">Subject line</p>
+            <p class="mt-3 break-words text-base leading-7 !text-zinc-400">
+              Is it specific, relevant and consistent with the body?
+            </p>
+          </div>
+
+          <div class="min-w-0 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-7">
+            <p class="m-0 break-words text-lg font-black !text-white">Opening</p>
+            <p class="mt-3 break-words text-base leading-7 !text-zinc-400">
+              Does the first paragraph immediately establish value?
+            </p>
+          </div>
+
+          <div class="min-w-0 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-7">
+            <p class="m-0 break-words text-lg font-black !text-white">Main message</p>
+            <p class="mt-3 break-words text-base leading-7 !text-zinc-400">
+              Is there one clear purpose throughout the email?
+            </p>
+          </div>
+
+          <div class="min-w-0 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-7">
+            <p class="m-0 break-words text-lg font-black !text-white">Reader benefit</p>
+            <p class="mt-3 break-words text-base leading-7 !text-zinc-400">
+              Is the practical value easy to understand?
+            </p>
+          </div>
+
+          <div class="min-w-0 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-7">
+            <p class="m-0 break-words text-lg font-black !text-white">Call to action</p>
+            <p class="mt-3 break-words text-base leading-7 !text-zinc-400">
+              Does it describe the next step clearly?
+            </p>
+          </div>
+
+          <div class="min-w-0 rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-7">
+            <p class="m-0 break-words text-lg font-black !text-white">Final review</p>
+            <p class="mt-3 break-words text-base leading-7 !text-zinc-400">
+              Is the email concise, accurate and easy to scan?
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          The best email copy does not demand attention. It earns attention by
+          being relevant, clear and genuinely useful.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <section class="px-5 pb-10 sm:px-6 sm:pb-12 lg:pb-14">
+
+  <div class="mx-auto max-w-7xl">
+
+    <div
+      class="article-image overflow-hidden rounded-[1.5rem] border border-black/10 bg-white sm:rounded-[2rem]"
+    >
+
+      <img
+        src="../images/insights/email-copywriting/email-copywriting-cta.png"
+        alt="Email copywriting that builds stronger engagement and measurable action"
+        loading="lazy"
+        class="h-auto w-full object-contain"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+    <section class="px-5 pb-16 pt-4 sm:px-6 sm:pb-20 sm:pt-6 lg:pb-24">
+
+  <div
+    class="mx-auto flex max-w-7xl flex-col gap-8 rounded-[1.5rem] border border-amber-600/20 bg-[radial-gradient(circle_at_80%_20%,rgba(217,119,6,0.14),transparent_32%),#FFFEFC] px-6 py-10 sm:rounded-[2rem] sm:px-8 sm:py-12 md:px-12 md:py-14 lg:flex-row lg:items-center lg:justify-between lg:px-14"
+  >
+
+    <div>
+
+      <p class="text-sm font-black uppercase tracking-[0.3em] text-amber-700">
+        Email Copywriting
+      </p>
+
+      <h2
+        class="mt-5 max-w-4xl break-words text-3xl font-black leading-tight tracking-tight text-zinc-950 sm:text-4xl md:text-5xl"
+      >
+        Create emails that earn attention, communicate value and move readers
+        toward the right next step.
+      </h2>
+
+    </div>
+
+    <a
+      href="../index.html#contact"
+      class="inline-flex w-full shrink-0 items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-black text-zinc-950 transition hover:-translate-y-0.5 hover:bg-amber-400 lg:w-auto"
+    >
+      Start a Project →
+    </a>
+
+  </div>
+
+</section>
+
+    <section class="border-t border-black/10 px-5 py-16 sm:px-6 sm:py-20 lg:py-24">
+
+  <div
+    class="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-center lg:justify-between"
+  >
+
+    <div>
+
+      <p class="text-sm font-black uppercase tracking-[0.3em] text-amber-700">
+        Next Insight
+      </p>
+
+      <h2
+        class="mt-4 max-w-3xl break-words text-3xl font-black tracking-tight text-zinc-950 sm:text-4xl"
+      >
+        Product Description Mistakes That Reduce Customer Trust
+      </h2>
+
+    </div>
+
+    <a
+      href="product-description-tips.html"
+      class="inline-flex w-full items-center justify-center font-black text-amber-700 transition hover:text-amber-600 lg:w-auto"
+    >
+      Read Next Article →
+    </a>
+
+  </div>
+
+</section>
+
+  </main>
+
+  <footer class="border-t border-black/10 bg-[#F7F5F2] px-5 py-10 sm:px-6 sm:py-12">
+
+  <div class="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+
+    <div class="text-center lg:text-left">
+
+      <a href="../index.html" class="inline-block leading-none">
         <span class="block text-sm font-black tracking-[0.32em]">
           UKE<span class="text-amber-500">.</span>
         </span>
@@ -238,417 +819,51 @@
         </span>
       </a>
 
-      <nav class="hidden items-center gap-8 text-sm font-semibold text-zinc-600 md:flex">
-        <a href="../index.html#services" class="transition hover:text-amber-600">Services</a>
-        <a href="../index.html#work" class="transition hover:text-amber-600">Work</a>
-        <a href="../insights.html" class="text-amber-600">Insights</a>
-        <a href="../index.html#contact" class="transition hover:text-amber-600">Contact</a>
-      </nav>
+      <p class="mx-auto mt-5 max-w-md text-sm leading-6 text-zinc-500 lg:mx-0">
+        Premium content, copywriting and localization support for digital brands.
+      </p>
+
+    </div>
+
+    <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm text-zinc-500">
+
+      <a
+        href="../index.html#services"
+        class="transition hover:text-amber-700"
+      >
+        Services
+      </a>
+
+      <a
+        href="../index.html#work"
+        class="transition hover:text-amber-700"
+      >
+        Work
+      </a>
+
+      <a
+        href="../insights.html"
+        class="font-semibold text-amber-700"
+      >
+        Insights
+      </a>
 
       <a
         href="../index.html#contact"
-        class="rounded-full border border-amber-600/40 px-6 py-3 text-sm font-black text-amber-700 transition hover:bg-amber-500 hover:text-zinc-950"
+        class="transition hover:text-amber-700"
       >
-        Start a Project
+        Contact
       </a>
 
-    </div>
-  </header>
-
-  <main>
-
-    <section class="px-6 pb-16 pt-16">
-      <div class="mx-auto max-w-7xl">
-
-        <a
-          href="../insights.html"
-          class="inline-flex items-center text-sm font-bold text-amber-700 transition hover:text-amber-600"
-        >
-          ← Back to Insights
-        </a>
-
-        <div class="mt-14 max-w-5xl">
-
-          <div class="flex flex-wrap items-center gap-3">
-
-            <span class="rounded-full border border-amber-600/25 bg-amber-500/10 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-amber-700">
-              Email Copywriting
-            </span>
-
-            <span class="text-sm font-semibold text-zinc-500">8 min read</span>
-            <span class="text-zinc-300">•</span>
-            <span class="text-sm font-semibold text-zinc-500">UKE Content Studio</span>
-
-          </div>
-
-          <h1 class="mt-7 text-5xl font-black leading-[1.02] tracking-tight text-zinc-950 md:text-7xl">
-            Why Some Emails Get Opened, Read and Acted On
-          </h1>
-
-          <p class="mt-8 max-w-4xl text-xl leading-9 text-zinc-600">
-            Effective email copy earns attention quickly, respects the reader’s time
-            and makes the next step feel clear, relevant and worthwhile.
-          </p>
-
-        </div>
-
-        <div class="article-image mt-14 overflow-hidden rounded-[2rem] border border-black/10 bg-white">
-          <img
-            src="../images/insights/email-copywriting/email-copywriting-hero.png"
-            alt="Email copywriting designed to improve opens, engagement and conversion"
-            class="h-auto w-full object-cover"
-          />
-        </div>
-
-      </div>
-    </section>
-
-    <section class="px-6 pb-24">
-      <div class="article-shell mx-auto max-w-7xl rounded-[2rem] border border-black/10 bg-[#FFFEFC] px-6 py-12 md:px-12 lg:px-16">
-
-        <div class="grid gap-16 lg:grid-cols-[260px_minmax(0,1fr)]">
-
-          <aside class="lg:sticky lg:top-28 lg:self-start">
-
-            <p class="text-xs font-black uppercase tracking-[0.25em] text-amber-700">
-              In This Article
-            </p>
-
-            <nav class="mt-5">
-              <a href="#why-emails-are-ignored" class="toc-link">Why emails are ignored</a>
-              <a href="#subject-lines" class="toc-link">Write stronger subject lines</a>
-              <a href="#opening-lines" class="toc-link">Make the opening count</a>
-              <a href="#email-structure" class="toc-link">Build a clear structure</a>
-              <a href="#calls-to-action" class="toc-link">Create better calls to action</a>
-              <a href="#email-checklist" class="toc-link">Final email checklist</a>
-            </nav>
-
-          </aside>
-
-          <article class="article-copy min-w-0">
-
-            <p class="mt-0">
-              Most inboxes are crowded. Readers make rapid decisions about what to
-              open, what to skim and what to delete. That means an email does not earn
-              attention simply because it was sent. Every element must justify the
-              reader’s next second.
-            </p>
-
-            <p>
-              Strong email copy is not built on clever wording alone. It combines
-              relevance, timing, structure, trust and a clear reason to act.
-            </p>
-
-            <h2 id="why-emails-are-ignored">
-              Why many marketing emails are ignored
-            </h2>
-
-            <p>
-              Emails often fail because they begin from the sender’s perspective
-              instead of the reader’s. The message focuses on what the company wants
-              to announce rather than what the recipient needs to understand.
-            </p>
-
-            <p>Common problems include:</p>
-
-            <ul>
-              <li>Subject lines that sound generic or exaggerated.</li>
-              <li>Long introductions before the message becomes useful.</li>
-              <li>Too many competing ideas in one email.</li>
-              <li>Weak personalization that feels automated.</li>
-              <li>Calls to action that are unclear or low-value.</li>
-              <li>Heavy design that distracts from the core message.</li>
-            </ul>
-
-            <div class="article-image my-14 overflow-hidden rounded-[1.75rem] border border-black/10 bg-zinc-100">
-              <img
-                src="../images/insights/email-copywriting/email-copywriting-content-01.png"
-                alt="Email copywriting process focused on clarity, structure and persuasive messaging"
-                loading="lazy"
-                class="h-auto w-full object-cover"
-              />
-            </div>
-
-            <h2 id="subject-lines">
-              Write subject lines that create relevant curiosity
-            </h2>
-
-            <p>
-              The subject line has one job: earn the open from the right reader. It
-              should communicate enough value to feel relevant without trying to
-              explain the entire email.
-            </p>
-
-            <h3>Be specific</h3>
-
-            <p>
-              Clear subject lines usually outperform vague promises because readers
-              understand what they are being invited to consider.
-            </p>
-
-            <h3>Avoid empty urgency</h3>
-
-            <p>
-              Urgency is useful only when it is real. Constant pressure weakens trust
-              and trains subscribers to ignore future messages.
-            </p>
-
-            <h3>Match the email content</h3>
-
-            <p>
-              A strong subject line should not create expectations the body cannot
-              satisfy. Misleading opens damage long-term engagement.
-            </p>
-
-            <h3>Use curiosity carefully</h3>
-
-            <p>
-              Curiosity works best when it is connected to a meaningful benefit,
-              problem or insight—not when the message becomes confusing.
-            </p>
-
-            <div class="quote-block mt-14 rounded-r-[1.5rem] px-7 py-8 md:px-10">
-              <p class="m-0 text-2xl font-black leading-10 text-zinc-900">
-                The subject line earns the open. The body must prove that opening the
-                email was the right decision.
-              </p>
-            </div>
-
-            <h2 id="opening-lines">
-              Make the opening immediately useful
-            </h2>
-
-            <p>
-              The first lines should confirm relevance. Avoid long greetings,
-              unnecessary background and statements the reader already understands.
-            </p>
-
-            <p>A strong opening often does one of the following:</p>
-
-            <ul>
-              <li>Names a specific problem.</li>
-              <li>Introduces a useful opportunity.</li>
-              <li>Shares a meaningful result or observation.</li>
-              <li>Connects directly to the reader’s context.</li>
-              <li>Explains why the message matters now.</li>
-            </ul>
-
-            <p>
-              The reader should understand the direction of the email within a few
-              seconds.
-            </p>
-
-            <div class="article-image my-14 overflow-hidden rounded-[1.75rem] border border-black/10 bg-zinc-100">
-              <img
-                src="../images/insights/email-copywriting/email-copywriting-content-02.png"
-                alt="Email strategy system showing audience, subject line, value and clear call to action"
-                loading="lazy"
-                class="h-auto w-full object-cover"
-              />
-            </div>
-
-            <h2 id="email-structure">
-              Build the email around one clear message
-            </h2>
-
-            <p>
-              Effective emails usually have one dominant purpose. When too many goals
-              compete, the message becomes harder to understand and easier to ignore.
-            </p>
-
-            <h3>Lead with relevance</h3>
-
-            <p>
-              Explain why the message matters to this audience before describing the
-              offer, update or request.
-            </p>
-
-            <h3>Develop the value</h3>
-
-            <p>
-              Show the practical benefit. Explain what changes for the reader and why
-              that change is meaningful.
-            </p>
-
-            <h3>Reduce unnecessary detail</h3>
-
-            <p>
-              Include enough information to support the decision. Move secondary
-              details to the landing page when possible.
-            </p>
-
-            <h3>Use visual hierarchy</h3>
-
-            <p>
-              Short paragraphs, descriptive subheadings and carefully placed emphasis
-              help readers understand the email quickly.
-            </p>
-
-            <h2 id="calls-to-action">
-              Create calls to action that feel clear and valuable
-            </h2>
-
-            <p>
-              The call to action should explain what happens next. Generic labels such
-              as <strong>“Click Here”</strong> provide less information than specific
-              actions such as <strong>“View the Guide”</strong>,
-              <strong>“Compare the Plans”</strong> or
-              <strong>“Start Your Application.”</strong>
-            </p>
-
-            <p>Strong calls to action are:</p>
-
-            <ul>
-              <li>Specific about the next step.</li>
-              <li>Consistent with the email’s promise.</li>
-              <li>Easy to find without overwhelming the page.</li>
-              <li>Appropriate for the reader’s level of commitment.</li>
-              <li>Supported by enough context to feel safe and worthwhile.</li>
-            </ul>
-
-            <p>
-              A single primary action usually creates more clarity than several
-              equally prominent buttons.
-            </p>
-
-            <h2 id="email-checklist">
-              Final email copywriting checklist
-            </h2>
-
-            <div class="mt-10 grid gap-5 md:grid-cols-2">
-
-              <div class="check-card rounded-2xl border border-black/10 bg-[#FAF8F4] p-7">
-                <p class="m-0 text-lg font-black text-zinc-900">Subject line</p>
-                <p class="mt-3 text-base leading-7">
-                  Is it specific, relevant and consistent with the body?
-                </p>
-              </div>
-
-              <div class="check-card rounded-2xl border border-black/10 bg-[#FAF8F4] p-7">
-                <p class="m-0 text-lg font-black text-zinc-900">Opening</p>
-                <p class="mt-3 text-base leading-7">
-                  Does the first paragraph immediately establish value?
-                </p>
-              </div>
-
-              <div class="check-card rounded-2xl border border-black/10 bg-[#FAF8F4] p-7">
-                <p class="m-0 text-lg font-black text-zinc-900">Main message</p>
-                <p class="mt-3 text-base leading-7">
-                  Is there one clear purpose throughout the email?
-                </p>
-              </div>
-
-              <div class="check-card rounded-2xl border border-black/10 bg-[#FAF8F4] p-7">
-                <p class="m-0 text-lg font-black text-zinc-900">Reader benefit</p>
-                <p class="mt-3 text-base leading-7">
-                  Is the practical value easy to understand?
-                </p>
-              </div>
-
-              <div class="check-card rounded-2xl border border-black/10 bg-[#FAF8F4] p-7">
-                <p class="m-0 text-lg font-black text-zinc-900">Call to action</p>
-                <p class="mt-3 text-base leading-7">
-                  Does it describe the next step clearly?
-                </p>
-              </div>
-
-              <div class="check-card rounded-2xl border border-black/10 bg-[#FAF8F4] p-7">
-                <p class="m-0 text-lg font-black text-zinc-900">Final review</p>
-                <p class="mt-3 text-base leading-7">
-                  Is the email concise, accurate and easy to scan?
-                </p>
-              </div>
-
-            </div>
-
-            <p>
-              The best email copy does not demand attention. It earns attention by
-              being relevant, clear and genuinely useful.
-            </p>
-
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="px-6 pb-12">
-      <div class="mx-auto max-w-7xl">
-
-        <div class="article-image overflow-hidden rounded-[2rem] border border-black/10 bg-white">
-          <img
-            src="../images/insights/email-copywriting/email-copywriting-cta.png"
-            alt="Email copywriting that builds stronger engagement and measurable action"
-            loading="lazy"
-            class="h-auto w-full object-cover"
-          />
-        </div>
-
-      </div>
-    </section>
-
-    <section class="px-6 pb-24 pt-6">
-      <div class="mx-auto flex max-w-7xl flex-col gap-10 rounded-[2rem] border border-amber-600/20 bg-[radial-gradient(circle_at_80%_20%,rgba(217,119,6,0.14),transparent_32%),#FFFEFC] px-8 py-14 md:flex-row md:items-center md:justify-between md:px-14">
-
-        <div>
-          <p class="text-sm font-black uppercase tracking-[0.3em] text-amber-700">
-            Email Copywriting
-          </p>
-
-          <h2 class="mt-5 max-w-4xl text-4xl font-black leading-tight tracking-tight text-zinc-950 md:text-5xl">
-            Create emails that earn attention, communicate value and move readers
-            toward the right next step.
-          </h2>
-        </div>
-
-        <a
-          href="../index.html#contact"
-          class="inline-flex shrink-0 items-center justify-center rounded-full bg-amber-500 px-8 py-4 text-sm font-black text-zinc-950 transition hover:-translate-y-0.5 hover:bg-amber-400"
-        >
-          Start a Project →
-        </a>
-
-      </div>
-    </section>
-
-    <section class="border-t border-black/10 px-6 py-20">
-      <div class="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
-
-        <div>
-          <p class="text-sm font-black uppercase tracking-[0.3em] text-amber-700">
-            Next Insight
-          </p>
-
-          <h2 class="mt-4 max-w-3xl text-3xl font-black tracking-tight text-zinc-950 md:text-4xl">
-            Product Description Mistakes That Reduce Customer Trust
-          </h2>
-        </div>
-
-        <a
-          href="product-description-tips.html"
-          class="inline-flex items-center font-black text-amber-700 transition hover:text-amber-600"
-        >
-          Read Next Article →
-        </a>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="border-t border-black/10 px-6 py-10">
-    <div class="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-zinc-500 md:flex-row md:items-center md:justify-between">
-      <span>UKE Content Studio</span>
-      <nav class="flex flex-wrap items-center gap-6">
-      <a href="../index.html#services" class="transition hover:text-white">Services</a>
-      <a href="../index.html#work" class="transition hover:text-white">Work</a>
-      <a href="../index.html#process" class="transition hover:text-white">Process</a>
-      <a href="../insights.html" class="transition hover:text-white">Insights</a>
-      <a href="../index.html#contact" class="transition hover:text-white">Contact</a>
     </nav>
-      <span>© 2026 UKE Content Studio.</span>
-    </div>
-  </footer>
+
+    <p class="text-center text-sm text-zinc-500 lg:text-right">
+      © 2026 UKE Content Studio.
+    </p>
+
+  </div>
+
+</footer>
 
   <script>
     const progressBar = document.getElementById("reading-progress");
@@ -674,6 +889,47 @@
 
     updateReadingProgress();
   </script>
+  <script>
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuOpenIcon = document.getElementById("menu-open-icon");
+  const menuCloseIcon = document.getElementById("menu-close-icon");
+
+  if (
+    mobileMenuButton &&
+    mobileMenu &&
+    menuOpenIcon &&
+    menuCloseIcon
+  ) {
+    mobileMenuButton.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+
+      mobileMenu.classList.toggle("hidden");
+      menuOpenIcon.classList.toggle("hidden");
+      menuCloseIcon.classList.toggle("hidden");
+
+      mobileMenuButton.setAttribute("aria-expanded", String(!isOpen));
+      mobileMenuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Open navigation menu" : "Close navigation menu"
+      );
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuOpenIcon.classList.remove("hidden");
+        menuCloseIcon.classList.add("hidden");
+
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+        mobileMenuButton.setAttribute(
+          "aria-label",
+          "Open navigation menu"
+        );
+      });
+    });
+  }
+</script>
 
 </body>
 </html>

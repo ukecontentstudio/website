@@ -76,75 +76,204 @@
 <body class="bg-zinc-950 text-white antialiased">
   <main class="min-h-screen overflow-hidden bg-[radial-gradient(circle_at_50%_0%,rgba(251,191,36,0.16),transparent_32%),linear-gradient(to_bottom,#09090b,#050505)]">
 
-    <header class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-zinc-950/70 backdrop-blur-xl">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <a href="#" class="leading-none">
-          <span class="block text-sm font-black tracking-[0.32em] text-white">UKE<span class="text-amber-400">.</span></span>
-          <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">Content Studio</span>
+    <header class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-zinc-950/90 backdrop-blur-xl">
+  <div class="mx-auto max-w-7xl px-5 sm:px-6">
+    <div class="flex items-center justify-between py-4 md:py-5">
+
+      <a href="#" class="relative z-50 leading-none" aria-label="UKE Content Studio home">
+        <span class="block text-sm font-black tracking-[0.32em] text-white">
+          UKE<span class="text-amber-400">.</span>
+        </span>
+
+        <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+          Content Studio
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm font-medium text-zinc-400 md:flex">
+        <a href="#services" class="transition hover:text-white">Services</a>
+        <a href="#work" class="transition hover:text-white">Work</a>
+        <a href="#process" class="transition hover:text-white">Process</a>
+        <a href="./insights.html" class="transition hover:text-white">Insights</a>
+        <a href="#contact" class="transition hover:text-white">Contact</a>
+      </nav>
+
+      <a
+        href="#contact"
+        class="hidden rounded-full border border-amber-400/40 px-5 py-2 text-sm font-bold text-amber-300 transition hover:bg-amber-400 hover:text-zinc-950 md:inline-flex"
+      >
+        Start a Project
+      </a>
+
+      <button
+        id="mobile-menu-button"
+        type="button"
+        class="relative z-50 flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white md:hidden"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          id="menu-open-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+
+        <svg
+          id="menu-close-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="hidden h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+
+    </div>
+
+    <div
+      id="mobile-menu"
+      class="hidden border-t border-white/10 pb-6 pt-5 md:hidden"
+    >
+      <nav class="flex flex-col">
+        <a
+          href="#services"
+          class="mobile-menu-link border-b border-white/10 py-4 text-base font-bold text-zinc-300"
+        >
+          Services
         </a>
 
-        <nav class="hidden items-center gap-8 text-sm font-medium text-zinc-400 md:flex">
-          <a href="#services" class="transition hover:text-white">Services</a>
-          <a href="#work" class="transition hover:text-white">Work</a>
-          <a href="#process" class="transition hover:text-white">Process</a>
-          <a href="./insights.html" class="transition hover:text-white">Insights</a>
-          <a href="#contact" class="transition hover:text-white">Contact</a>
-        </nav>
+        <a
+          href="#work"
+          class="mobile-menu-link border-b border-white/10 py-4 text-base font-bold text-zinc-300"
+        >
+          Work
+        </a>
 
-        <a href="#contact" class="hidden rounded-full border border-amber-400/40 px-5 py-2 text-sm font-bold text-amber-300 transition hover:bg-amber-400 hover:text-zinc-950 md:inline-flex">
+        <a
+          href="#process"
+          class="mobile-menu-link border-b border-white/10 py-4 text-base font-bold text-zinc-300"
+        >
+          Process
+        </a>
+
+        <a
+          href="./insights.html"
+          class="border-b border-white/10 py-4 text-base font-bold text-zinc-300"
+        >
+          Insights
+        </a>
+
+        <a
+          href="#contact"
+          class="mobile-menu-link border-b border-white/10 py-4 text-base font-bold text-zinc-300"
+        >
+          Contact
+        </a>
+
+        <a
+          href="#contact"
+          class="mobile-menu-link mt-6 rounded-full bg-amber-400 px-6 py-4 text-center text-sm font-black text-zinc-950"
+        >
           Start a Project
         </a>
-      </div>
-    </header>
+      </nav>
+    </div>
+  </div>
+</header>
 
-    <section class="flex min-h-screen items-center justify-center px-6 pt-10">
-      <div class="mx-auto max-w-6xl -translate-y-8 text-center">
-        <p class="mb-6 text-xs font-bold uppercase tracking-[0.45em] text-amber-400">
-          Content • Copywriting • Localization
+    <section class="flex items-center justify-center px-5 pb-16 pt-32 sm:px-6 sm:pb-20 sm:pt-36 md:min-h-screen md:py-28">
+  <div class="mx-auto w-full max-w-6xl text-center md:-translate-y-4">
+
+    <p class="mb-5 text-[10px] font-bold uppercase tracking-[0.3em] text-amber-400 sm:mb-6 sm:text-xs sm:tracking-[0.45em]">
+      Content • Copywriting • Localization
+    </p>
+
+    <h1 class="text-4xl font-black leading-[1.12] tracking-tight text-white sm:text-5xl md:text-7xl lg:text-8xl">
+      Words that build trust.
+
+      <span class="mt-3 block bg-gradient-to-r from-amber-200 via-white to-zinc-500 bg-clip-text pb-2 text-3xl leading-[1.18] text-transparent sm:text-4xl md:pb-3 md:text-6xl lg:text-7xl">
+        Content that drives growth.
+      </span>
+    </h1>
+
+    <p class="mx-auto mt-6 max-w-3xl text-base leading-7 text-zinc-400 sm:mt-8 sm:text-lg sm:leading-8 md:text-xl">
+      UKE Content Studio helps brands, founders and digital businesses communicate with clarity,
+      strategy and conversion-focused content across SEO, copywriting and English–Turkish localization.
+    </p>
+
+    <div class="mt-8 flex flex-col justify-center gap-4 sm:mt-10 sm:flex-row">
+      <a
+        href="#services"
+        class="w-full rounded-full bg-amber-400 px-8 py-4 text-center text-sm font-black text-zinc-950 shadow-lg shadow-amber-400/20 transition hover:-translate-y-0.5 hover:bg-amber-300 sm:w-auto"
+      >
+        Explore Services
+      </a>
+
+      <a
+        href="#work"
+        class="w-full rounded-full border border-white/15 px-8 py-4 text-center text-sm font-black text-white transition hover:-translate-y-0.5 hover:border-amber-400/60 hover:bg-white/5 sm:w-auto"
+      >
+        View Portfolio
+      </a>
+    </div>
+
+    <div class="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-4 sm:mt-16 sm:grid-cols-2 md:grid-cols-4">
+
+      <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+        <p class="text-lg font-black text-white">
+          SEO Strategy
         </p>
 
-        <h1 class="text-5xl font-black leading-[1.12] tracking-tight text-white md:text-7xl lg:text-8xl">
-          Words that build trust.
-          <span class="mt-3 block bg-gradient-to-r from-amber-200 via-white to-zinc-500 bg-clip-text pb-3 leading-[1.18] text-4xl text-transparent md:text-6xl lg:text-7xl">
-            Content that drives growth.
-          </span>
-        </h1>
+        <p class="mt-1 text-sm text-zinc-500">
+          Search-focused content
+        </p>
+      </div>
 
-        <p class="mx-auto mt-8 max-w-3xl text-lg leading-8 text-zinc-400 md:text-xl">
-          UKE Content Studio helps brands, founders and digital businesses communicate with clarity,
-          strategy and conversion-focused content across SEO, copywriting and English–Turkish localization.
+      <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+        <p class="text-lg font-black text-white">
+          Localization
         </p>
 
-        <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-          <a href="#services" class="rounded-full bg-amber-400 px-8 py-4 text-sm font-black text-zinc-950 shadow-lg shadow-amber-400/20 transition hover:-translate-y-0.5 hover:bg-amber-300">
-            Explore Services
-          </a>
-
-          <a href="#work" class="rounded-full border border-white/15 px-8 py-4 text-sm font-black text-white transition hover:-translate-y-0.5 hover:border-amber-400/60 hover:bg-white/5">
-            View Portfolio
-          </a>
-        </div>
-
-        <div class="mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-4">
-          <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-            <p class="text-lg font-black text-white">SEO Strategy</p>
-            <p class="mt-1 text-sm text-zinc-500">Search-focused content</p>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-            <p class="text-lg font-black text-white">Localization</p>
-            <p class="mt-1 text-sm text-zinc-500">EN ↔ TR adaptation</p>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-            <p class="text-lg font-black text-white">AI Humanization</p>
-            <p class="mt-1 text-sm text-zinc-500">Natural brand voice</p>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-            <p class="text-lg font-black text-white">Conversion Copy</p>
-            <p class="mt-1 text-sm text-zinc-500">Words that sell</p>
-          </div>
-        </div>
+        <p class="mt-1 text-sm text-zinc-500">
+          EN ↔ TR adaptation
+        </p>
       </div>
-    </section>
+
+      <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+        <p class="text-lg font-black text-white">
+          AI Humanization
+        </p>
+
+        <p class="mt-1 text-sm text-zinc-500">
+          Natural brand voice
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+        <p class="text-lg font-black text-white">
+          Conversion Copy
+        </p>
+
+        <p class="mt-1 text-sm text-zinc-500">
+          Words that sell
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 <section id="services" class="border-t border-white/10 bg-zinc-950 px-6 py-28">
   <div class="mx-auto max-w-7xl">
     <div class="max-w-3xl">
@@ -232,237 +361,333 @@
   </div>
 </section>
 
-<section id="work" class="border-t border-white/10 bg-zinc-950 px-6 py-28">
+<section
+  id="work"
+  class="border-t border-white/10 bg-zinc-950 px-5 py-20 sm:px-6 sm:py-24 lg:py-28"
+>
   <div class="mx-auto max-w-7xl">
 
-    <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">
+    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
       FEATURED WORK
     </p>
 
-    <h2 class="max-w-4xl text-5xl font-black leading-tight md:text-6xl">
+    <h2 class="max-w-4xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl">
       Selected portfolio directions.
     </h2>
 
-    <p class="mt-8 max-w-3xl text-xl leading-9 text-zinc-400">
+    <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-400 sm:mt-8 sm:text-lg md:text-xl md:leading-9">
       A focused showcase of content, localization and conversion-oriented work designed for digital platforms.
     </p>
 
-    <div class="mt-20 grid gap-8 lg:grid-cols-3">
+    <div class="mt-12 grid gap-5 sm:mt-16 sm:gap-6 lg:mt-20 lg:grid-cols-3 lg:gap-8">
 
       <a
-  href="portfolio/seo-content.html"
-  class="group min-h-[420px] rounded-3xl border border-zinc-200 bg-zinc-50 p-10 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400 hover:shadow-2xl hover:shadow-amber-500/10 lg:col-span-2"
+        href="portfolio/seo-content.html"
+        class="group rounded-3xl border border-zinc-200 bg-zinc-50 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400 hover:shadow-2xl hover:shadow-amber-500/10 sm:p-8 lg:col-span-2 lg:min-h-[420px] lg:p-10"
+      >
+        <p class="text-xs font-semibold uppercase tracking-[0.25em] text-amber-500 sm:text-sm sm:tracking-[0.3em]">
+          Main Case
+        </p>
+
+        <h3 class="mt-6 max-w-2xl text-3xl font-black leading-tight tracking-tight text-zinc-900 sm:mt-8 sm:text-4xl md:text-5xl lg:mt-10">
+          SEO content system for a digital brand.
+        </h3>
+
+        <p class="mt-6 max-w-2xl text-base leading-7 text-zinc-600 sm:mt-8 sm:text-lg sm:leading-8">
+          A structured content approach covering research, article planning, keyword alignment and conversion-focused page writing.
+        </p>
+
+        <span class="mt-8 inline-flex text-sm font-bold text-amber-600 transition duration-300 group-hover:translate-x-2 sm:mt-10 lg:mt-12">
+          View Case Study →
+        </span>
+      </a>
+
+      <div class="grid gap-5 sm:gap-6 lg:gap-8">
+
+        <a
+          href="portfolio/localization.html"
+          class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+        >
+          <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+            Website Localization
+          </h3>
+
+          <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+            English–Turkish content adaptation for clearer messaging and better user trust.
+          </p>
+        </a>
+
+        <a
+          href="portfolio/amazon-listing.html"
+          class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+        >
+          <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+            Amazon Listing Copy
+          </h3>
+
+          <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+            Product titles, bullets and descriptions refined for clarity and buyer confidence.
+          </p>
+        </a>
+
+        <a
+          href="portfolio/ai-humanization.html"
+          class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+        >
+          <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+            AI Content Humanization
+          </h3>
+
+          <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+            AI drafts rewritten into natural, brand-safe and publication-ready content.
+          </p>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="mt-5 grid gap-5 sm:mt-6 sm:gap-6 md:grid-cols-2 lg:mt-8 lg:grid-cols-3 lg:gap-8">
+
+      <a
+        href="portfolio/product-description.html"
+        class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+      >
+        <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+          Product Description
+        </h3>
+
+        <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+          Conversion-focused product copy built to highlight value and support buying decisions.
+        </p>
+      </a>
+
+      <a
+        href="portfolio/landing-page.html"
+        class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+      >
+        <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+          Landing Page Copywriting
+        </h3>
+
+        <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+          Page messaging designed to guide attention, explain value and drive action.
+        </p>
+      </a>
+
+      <a
+        href="portfolio/article-rewriting.html"
+        class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+      >
+        <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+          Article Rewriting
+        </h3>
+
+        <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+          Existing content rewritten for stronger clarity, smoother flow and professional tone.
+        </p>
+      </a>
+
+      <a
+        href="portfolio/translation.html"
+        class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+      >
+        <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+          English ↔ Turkish Translation
+        </h3>
+
+        <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+          Accurate bilingual translation that protects meaning, tone and context.
+        </p>
+      </a>
+
+      <a
+        href="portfolio/proofreading.html"
+        class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+      >
+        <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+          Proofreading & Editing
+        </h3>
+
+        <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+          Clean, polished and publication-ready content with improved grammar and clarity.
+        </p>
+      </a>
+
+      <a
+        href="portfolio/email-copywriting.html"
+        class="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05] sm:p-8"
+      >
+        <h3 class="text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl">
+          Email Copywriting
+        </h3>
+
+        <p class="mt-4 text-base leading-7 text-zinc-400 sm:mt-5">
+          Email messaging built for clearer communication, engagement and action.
+        </p>
+      </a>
+
+    </div>
+  </div>
+</section>
+<section
+  id="process"
+  class="border-t border-white/10 bg-zinc-950 px-5 py-20 sm:px-6 sm:py-24 lg:py-28"
 >
-  <p class="text-sm font-semibold uppercase tracking-[0.3em] text-amber-500">
-    Main Case
-  </p>
+  <div class="mx-auto max-w-7xl">
 
-  <h3 class="mt-10 max-w-2xl text-4xl font-black tracking-tight text-zinc-900 md:text-5xl">
-    SEO content system for a digital brand.
-  </h3>
+    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
+      PROCESS
+    </p>
 
-  <p class="mt-8 max-w-2xl text-lg leading-8 text-zinc-600">
-    A structured content approach covering research, article planning, keyword alignment and conversion-focused page writing.
-  </p>
+    <h2 class="max-w-4xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl">
+      A clear process.<br>
+      Better results.
+    </h2>
 
-  <span class="mt-12 inline-flex text-sm font-bold text-amber-600 transition duration-300 group-hover:translate-x-2">
-    View Case Study →
-  </span>
-</a>
+    <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-400 sm:mt-8 sm:text-lg md:text-xl md:leading-9">
+      Every project follows a structured workflow designed to keep communication clear,
+      revisions focused and delivery on schedule.
+    </p>
 
-      <div class="grid gap-8">
-        <a href="portfolio/localization.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-          <h3 class="text-2xl font-extrabold tracking-tight text-white">Website Localization</h3>
-          <p class="mt-5 leading-7 text-zinc-400">English–Turkish content adaptation for clearer messaging and better user trust.</p>
-        </a>
+    <div class="mt-12 grid gap-5 sm:mt-16 sm:gap-6 md:grid-cols-2 xl:mt-20 xl:grid-cols-4 xl:gap-8">
 
-        <a href="portfolio/amazon-listing.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-          <h3 class="text-2xl font-extrabold tracking-tight text-white">Amazon Listing Copy</h3>
-          <p class="mt-5 leading-7 text-zinc-400">Product titles, bullets and descriptions refined for clarity and buyer confidence.</p>
-        </a>
+      <div class="min-h-[220px] rounded-3xl border border-zinc-200 bg-zinc-50 p-6 sm:min-h-[240px] sm:p-8 lg:min-h-[260px] lg:p-9">
+        <h3 class="text-xl font-extrabold tracking-tight text-zinc-900 sm:text-2xl">
+          Discovery
+        </h3>
 
-        <a href="portfolio/ai-humanization.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-          <h3 class="text-2xl font-extrabold tracking-tight text-white">AI Content Humanization</h3>
-          <p class="mt-5 leading-7 text-zinc-400">AI drafts rewritten into natural, brand-safe and publication-ready content.</p>
-        </a>
+        <p class="mt-5 leading-7 text-zinc-600 sm:mt-7 sm:leading-8">
+          Understanding your business, audience and goals before writing a single word.
+        </p>
+      </div>
+
+      <div class="min-h-[220px] rounded-3xl border border-zinc-200 bg-zinc-50 p-6 sm:min-h-[240px] sm:p-8 lg:min-h-[260px] lg:p-9">
+        <h3 class="text-xl font-extrabold tracking-tight text-zinc-900 sm:text-2xl">
+          Strategy
+        </h3>
+
+        <p class="mt-5 leading-7 text-zinc-600 sm:mt-7 sm:leading-8">
+          Planning structure, keywords, messaging and conversion objectives.
+        </p>
+      </div>
+
+      <div class="min-h-[220px] rounded-3xl border border-zinc-200 bg-zinc-50 p-6 sm:min-h-[240px] sm:p-8 lg:min-h-[260px] lg:p-9">
+        <h3 class="text-xl font-extrabold tracking-tight text-zinc-900 sm:text-2xl">
+          Creation
+        </h3>
+
+        <p class="mt-5 leading-7 text-zinc-600 sm:mt-7 sm:leading-8">
+          Writing, refining and polishing every piece for clarity and impact.
+        </p>
+      </div>
+
+      <div class="min-h-[220px] rounded-3xl border border-zinc-200 bg-zinc-50 p-6 sm:min-h-[240px] sm:p-8 lg:min-h-[260px] lg:p-9">
+        <h3 class="text-xl font-extrabold tracking-tight text-zinc-900 sm:text-2xl">
+          Delivery
+        </h3>
+
+        <p class="mt-5 leading-7 text-zinc-600 sm:mt-7 sm:leading-8">
+          Final review, revisions and delivery ready for publication.
+        </p>
       </div>
 
     </div>
 
-    <div class="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <a href="portfolio/product-description.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-        <h3 class="text-2xl font-extrabold tracking-tight text-white">Product Description</h3>
-        <p class="mt-5 leading-7 text-zinc-400">Conversion-focused product copy built to highlight value and support buying decisions.</p>
-      </a>
-
-      <a href="portfolio/landing-page.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-        <h3 class="text-2xl font-extrabold tracking-tight text-white">Landing Page Copywriting</h3>
-        <p class="mt-5 leading-7 text-zinc-400">Page messaging designed to guide attention, explain value and drive action.</p>
-      </a>
-
-      <a href="portfolio/article-rewriting.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-        <h3 class="text-2xl font-extrabold tracking-tight text-white">Article Rewriting</h3>
-        <p class="mt-5 leading-7 text-zinc-400">Existing content rewritten for stronger clarity, smoother flow and professional tone.</p>
-      </a>
-
-      <a href="portfolio/translation.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-        <h3 class="text-2xl font-extrabold tracking-tight text-white">English ↔ Turkish Translation</h3>
-        <p class="mt-5 leading-7 text-zinc-400">Accurate bilingual translation that protects meaning, tone and context.</p>
-      </a>
-
-      <a href="portfolio/proofreading.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-        <h3 class="text-2xl font-extrabold tracking-tight text-white">Proofreading & Editing</h3>
-        <p class="mt-5 leading-7 text-zinc-400">Clean, polished and publication-ready content with improved grammar and clarity.</p>
-      </a>
-
-      <a href="portfolio/email-copywriting.html" class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 hover:bg-white/[0.05]">
-        <h3 class="text-2xl font-extrabold tracking-tight text-white">Email Copywriting</h3>
-        <p class="mt-5 leading-7 text-zinc-400">Email messaging built for clearer communication, engagement and action.</p>
-      </a>
-    </div>
-
   </div>
 </section>
-<section id="process" class="border-t border-white/10 bg-zinc-950 px-6 py-28">
-    <div class="mx-auto max-w-7xl">
-
-        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">
-            PROCESS
-        </p>
-
-        <h2 class="max-w-4xl text-5xl font-black leading-tight md:text-6xl">
-            A clear process.<br>
-            Better results.
-        </h2>
-
-        <p class="mt-8 max-w-3xl text-xl leading-9 text-zinc-400">
-            Every project follows a structured workflow designed to keep communication clear,
-            revisions focused and delivery on schedule.
-        </p>
-<div class="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
-
-    <div class="min-h-[260px] rounded-3xl border border-zinc-200 bg-zinc-50 p-9">
-        <h3 class="text-2xl font-extrabold tracking-tight text-zinc-900">
-            Discovery
-        </h3>
-
-        <p class="mt-8 leading-8 text-zinc-600">
-            Understanding your business, audience and goals before writing a single word.
-        </p>
-    </div>
-
-    <div class="min-h-[260px] rounded-3xl border border-zinc-200 bg-zinc-50 p-9">
-        <h3 class="text-2xl font-extrabold tracking-tight text-zinc-900">
-            Strategy
-        </h3>
-
-        <p class="mt-8 leading-8 text-zinc-600">
-            Planning structure, keywords, messaging and conversion objectives.
-        </p>
-    </div>
-
-    <div class="min-h-[260px] rounded-3xl border border-zinc-200 bg-zinc-50 p-9">
-        <h3 class="text-2xl font-extrabold tracking-tight text-zinc-900">
-            Creation
-        </h3>
-
-        <p class="mt-8 leading-8 text-zinc-600">
-            Writing, refining and polishing every piece for clarity and impact.
-        </p>
-    </div>
-
-    <div class="min-h-[260px] rounded-3xl border border-zinc-200 bg-zinc-50 p-9">
-        <h3 class="text-2xl font-extrabold tracking-tight text-zinc-900">
-            Delivery
-        </h3>
-
-        <p class="mt-8 leading-8 text-zinc-600">
-            Final review, revisions and delivery ready for publication.
-        </p>
-    </div>
-
-</div>
-    </div>
-</section>
-<section id="results" class="border-t border-white/10 bg-zinc-950 px-6 py-28">
+<section
+  id="results"
+  class="border-t border-white/10 bg-zinc-950 px-5 py-20 sm:px-6 sm:py-24 lg:py-28"
+>
   <div class="mx-auto max-w-7xl">
 
-    <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">
+    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
       RESULTS
     </p>
 
-    <h2 class="max-w-5xl text-5xl font-black leading-tight md:text-6xl">
-      Built for brands that
-      expect measurable growth.
+    <h2 class="max-w-5xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl">
+      Built for brands that expect measurable growth.
     </h2>
 
-    <p class="mt-8 max-w-3xl text-xl leading-9 text-zinc-400">
+    <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-400 sm:mt-8 sm:text-lg md:text-xl md:leading-9">
       Every project is designed around visibility,
       trust and conversion—not just words.
     </p>
 
-    <div class="mt-20 space-y-6">
+    <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-5 lg:mt-20 lg:space-y-6">
 
-      <a href="portfolio/seo-content.html" class="group flex items-center justify-between rounded-3xl border border-white/10 bg-white/[0.03] px-10 py-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-white/[0.05]">
+      <a
+        href="portfolio/seo-content.html"
+        class="group flex flex-col gap-5 rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-6 transition duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-white/[0.05] sm:flex-row sm:items-center sm:justify-between sm:px-8 sm:py-7 lg:px-10 lg:py-8"
+      >
         <div>
-          <h3 class="text-3xl font-black text-white">
+          <h3 class="text-2xl font-black leading-tight text-white sm:text-3xl">
             SEO Content
           </h3>
 
-          <p class="mt-2 text-zinc-400">
+          <p class="mt-2 text-base leading-7 text-zinc-400">
             Built around search intent and long-term visibility.
           </p>
         </div>
 
-        <span class="text-amber-400 text-3xl font-light transition duration-300 group-hover:translate-x-2">
+        <span class="self-end text-2xl font-light text-amber-400 transition duration-300 group-hover:translate-x-2 sm:self-auto sm:text-3xl">
           →
         </span>
       </a>
 
-      <a href="portfolio/localization.html" class="group flex items-center justify-between rounded-3xl border border-white/10 bg-white/[0.03] px-10 py-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-white/[0.05]">
+      <a
+        href="portfolio/localization.html"
+        class="group flex flex-col gap-5 rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-6 transition duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-white/[0.05] sm:flex-row sm:items-center sm:justify-between sm:px-8 sm:py-7 lg:px-10 lg:py-8"
+      >
         <div>
-          <h3 class="text-3xl font-black text-white">
+          <h3 class="text-2xl font-black leading-tight text-white sm:text-3xl">
             Localization
           </h3>
 
-          <p class="mt-2 text-zinc-400">
+          <p class="mt-2 text-base leading-7 text-zinc-400">
             English ↔ Turkish adaptation with natural tone.
           </p>
         </div>
 
-        <span class="text-amber-400 text-3xl font-light transition duration-300 group-hover:translate-x-2">
+        <span class="self-end text-2xl font-light text-amber-400 transition duration-300 group-hover:translate-x-2 sm:self-auto sm:text-3xl">
           →
         </span>
       </a>
 
-      <a href="portfolio/landing-page.html" class="group flex items-center justify-between rounded-3xl border border-white/10 bg-white/[0.03] px-10 py-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-white/[0.05]">
+      <a
+        href="portfolio/landing-page.html"
+        class="group flex flex-col gap-5 rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-6 transition duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-white/[0.05] sm:flex-row sm:items-center sm:justify-between sm:px-8 sm:py-7 lg:px-10 lg:py-8"
+      >
         <div>
-          <h3 class="text-3xl font-black text-white">
+          <h3 class="text-2xl font-black leading-tight text-white sm:text-3xl">
             Copywriting
           </h3>
 
-          <p class="mt-2 text-zinc-400">
+          <p class="mt-2 text-base leading-7 text-zinc-400">
             Conversion-focused messaging that drives action.
           </p>
         </div>
 
-        <span class="text-amber-400 text-3xl font-light transition duration-300 group-hover:translate-x-2">
+        <span class="self-end text-2xl font-light text-amber-400 transition duration-300 group-hover:translate-x-2 sm:self-auto sm:text-3xl">
           →
         </span>
       </a>
 
-      <a href="portfolio/ai-humanization.html" class="group flex items-center justify-between rounded-3xl border border-white/10 bg-white/[0.03] px-10 py-8 transition duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-white/[0.05]">
+      <a
+        href="portfolio/ai-humanization.html"
+        class="group flex flex-col gap-5 rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-6 transition duration-300 hover:-translate-y-1 hover:border-amber-400/50 hover:bg-white/[0.05] sm:flex-row sm:items-center sm:justify-between sm:px-8 sm:py-7 lg:px-10 lg:py-8"
+      >
         <div>
-          <h3 class="text-3xl font-black text-white">
+          <h3 class="text-2xl font-black leading-tight text-white sm:text-3xl">
             AI Humanization
           </h3>
 
-          <p class="mt-2 text-zinc-400">
+          <p class="mt-2 text-base leading-7 text-zinc-400">
             Natural, human-first editing that protects brand voice.
           </p>
         </div>
 
-        <span class="text-amber-400 text-3xl font-light transition duration-300 group-hover:translate-x-2">
+        <span class="self-end text-2xl font-light text-amber-400 transition duration-300 group-hover:translate-x-2 sm:self-auto sm:text-3xl">
           →
         </span>
       </a>
@@ -471,130 +696,188 @@
   </div>
 </section>
 
-<section id="approach" class="border-t border-white/10 bg-zinc-950 px-6 py-28">
-    <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2 lg:items-start">
+<section
+  id="approach"
+  class="border-t border-white/10 bg-zinc-950 px-5 py-20 sm:px-6 sm:py-24 lg:py-28"
+>
+  <div class="mx-auto grid max-w-7xl gap-12 lg:gap-16 lg:grid-cols-2 lg:items-start">
 
-        <div>
-            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">
-                TRUSTED APPROACH
-            </p>
+    <div>
+      <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
+        TRUSTED APPROACH
+      </p>
 
-            <h2 class="text-5xl font-black leading-tight md:text-6xl">
-                Why clients choose UKE Content Studio.
-            </h2>
+      <h2 class="text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl">
+        Why clients choose UKE Content Studio.
+      </h2>
 
-            <p class="mt-8 text-xl leading-9 text-zinc-400">
-                A focused, reliable and detail-oriented content workflow built for brands that need professional communication.
-            </p>
-        </div>
+      <p class="mt-6 text-base leading-8 text-zinc-400 sm:mt-8 sm:text-lg md:text-xl md:leading-9">
+        A focused, reliable and detail-oriented content workflow built for brands that need professional communication.
+      </p>
+    </div>
 
-        <div class="space-y-4">
+    <div class="space-y-4 sm:space-y-5">
 
-    <div class="rounded-3xl border border-zinc-200 bg-zinc-50 px-8 py-6">
-        <h3 class="text-2xl font-extrabold text-zinc-900">
-            SEO-first thinking
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 px-6 py-5 sm:px-8 sm:py-6">
+        <h3 class="text-xl font-extrabold leading-tight text-zinc-900 sm:text-2xl">
+          SEO-first thinking
         </h3>
 
         <p class="mt-4 leading-7 text-zinc-600">
-            Content planned around search intent, readability and structure.
+          Content planned around search intent, readability and structure.
         </p>
-    </div>
+      </div>
 
-    <div class="rounded-3xl border border-zinc-200 bg-zinc-50 px-8 py-6">
-        <h3 class="text-2xl font-extrabold text-zinc-900">
-            Conversion-focused writing
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 px-6 py-5 sm:px-8 sm:py-6">
+        <h3 class="text-xl font-extrabold leading-tight text-zinc-900 sm:text-2xl">
+          Conversion-focused writing
         </h3>
 
         <p class="mt-4 leading-7 text-zinc-600">
-            Messaging designed to guide attention and support action.
+          Messaging designed to guide attention and support action.
         </p>
-    </div>
+      </div>
 
-    <div class="rounded-3xl border border-zinc-200 bg-zinc-50 px-8 py-6">
-        <h3 class="text-2xl font-extrabold text-zinc-900">
-            English ↔ Turkish localization
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 px-6 py-5 sm:px-8 sm:py-6">
+        <h3 class="text-xl font-extrabold leading-tight text-zinc-900 sm:text-2xl">
+          English ↔ Turkish localization
         </h3>
 
         <p class="mt-4 leading-7 text-zinc-600">
-            Natural adaptation that protects meaning, tone and business intent.
+          Natural adaptation that protects meaning, tone and business intent.
         </p>
-    </div>
+      </div>
 
-    <div class="rounded-3xl border border-zinc-200 bg-zinc-50 px-8 py-6">
-        <h3 class="text-2xl font-extrabold text-zinc-900">
-            Reliable delivery
+      <div class="rounded-3xl border border-zinc-200 bg-zinc-50 px-6 py-5 sm:px-8 sm:py-6">
+        <h3 class="text-xl font-extrabold leading-tight text-zinc-900 sm:text-2xl">
+          Reliable delivery
         </h3>
 
         <p class="mt-4 leading-7 text-zinc-600">
-            Clear communication, focused revisions and publication-ready output.
+          Clear communication, focused revisions and publication-ready output.
         </p>
-    </div>
-
-</div>
+      </div>
 
     </div>
+
+  </div>
 </section>
-<section id="contact" class="border-t border-white/10 bg-zinc-950 px-6 py-28">
-    <div class="mx-auto max-w-7xl">
-        <div class="rounded-[36px] border border-white/10 bg-white/[0.03] px-8 py-16 md:px-14 md:py-20">
+<section
+  id="contact"
+  class="border-t border-white/10 bg-zinc-950 px-5 py-20 sm:px-6 sm:py-24 lg:py-28"
+>
+  <div class="mx-auto max-w-7xl">
 
-            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">
-                CONTACT
-            </p>
+    <div class="rounded-[36px] border border-white/10 bg-white/[0.03] px-6 py-12 sm:px-10 sm:py-16 md:px-14 md:py-20">
 
-            <h2 class="max-w-4xl text-5xl font-black leading-tight md:text-6xl">
-                Let’s build content that makes your brand easier to trust.
-            </h2>
+      <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 sm:text-sm sm:tracking-[0.35em]">
+        CONTACT
+      </p>
 
-            <p class="mt-8 max-w-3xl text-xl leading-9 text-zinc-400">
-                Send a message for SEO content, copywriting, localization, AI content editing or portfolio-based collaboration.
-            </p>
+      <h2 class="max-w-4xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl">
+        Let’s build content that makes your brand easier to trust.
+      </h2>
 
-            <div class="mt-12 flex flex-col gap-4 sm:flex-row">
-                <a href="mailto:business.uke@gmail.com" class="rounded-full bg-amber-400 px-8 py-4 text-center text-sm font-black text-zinc-950 transition hover:-translate-y-1 hover:bg-amber-300">
-                    Email Me
-                </a>
+      <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-400 sm:mt-8 sm:text-lg md:text-xl md:leading-9">
+        Send a message for SEO content, copywriting, localization,
+        AI content editing or portfolio-based collaboration.
+      </p>
 
-                <a href="#work" class="rounded-full border border-white/15 px-8 py-4 text-center text-sm font-black text-white transition hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/5">
-                    View Portfolio
-                </a>
-            </div>
+      <div class="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row">
 
-        </div>
+        <a
+          href="mailto:business.uke@gmail.com"
+          class="w-full rounded-full bg-amber-400 px-8 py-4 text-center text-sm font-black text-zinc-950 transition hover:-translate-y-1 hover:bg-amber-300 sm:w-auto"
+        >
+          Email Me
+        </a>
+
+        <a
+          href="#work"
+          class="w-full rounded-full border border-white/15 px-8 py-4 text-center text-sm font-black text-white transition hover:-translate-y-1 hover:border-amber-400/60 hover:bg-white/5 sm:w-auto"
+        >
+          View Portfolio
+        </a>
+
+      </div>
+
     </div>
+
+  </div>
 </section>
-<footer class="border-t border-white/10 bg-zinc-950 px-6 py-12">
-    <div class="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
+<footer class="border-t border-white/10 bg-zinc-950 px-5 py-10 sm:px-6 sm:py-12">
+  <div class="mx-auto flex max-w-7xl flex-col gap-10 md:flex-row md:items-center md:justify-between">
 
-        <div>
-            <a href="index.html" class="leading-none">
-                <span class="block text-sm font-black tracking-[0.32em] text-white">
-                    UKE<span class="text-amber-400">.</span>
-                </span>
-                <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">
-                    Content Studio
-                </span>
-            </a>
+    <div class="text-center md:text-left">
+      <a href="index.html" class="inline-block leading-none">
+        <span class="block text-sm font-black tracking-[0.32em] text-white">
+          UKE<span class="text-amber-400">.</span>
+        </span>
 
-            <p class="mt-5 max-w-md text-sm leading-6 text-zinc-500">
-                Premium content, copywriting and localization support for digital brands.
-            </p>
-        </div>
+        <span class="mt-1 block text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+          Content Studio
+        </span>
+      </a>
 
-        <div class="flex flex-wrap gap-5 text-sm text-zinc-500">
-            <a href="#services" class="transition hover:text-white">Services</a>
-            <a href="#work" class="transition hover:text-white">Work</a>
-            <a href="#process" class="transition hover:text-white">Process</a>
-            <a href="./insights.html">Insights</a>
-            <a href="#contact" class="transition hover:text-white">Contact</a>
-        </div>
-
-        <p class="text-sm text-zinc-600">
-            © 2026 UKE Content Studio.
-        </p>
-
+      <p class="mx-auto mt-5 max-w-md text-sm leading-6 text-zinc-500 md:mx-0">
+        Premium content, copywriting and localization support for digital brands.
+      </p>
     </div>
+
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-zinc-500">
+      <a href="#services" class="transition hover:text-white">Services</a>
+      <a href="#work" class="transition hover:text-white">Work</a>
+      <a href="#process" class="transition hover:text-white">Process</a>
+      <a href="./insights.html" class="transition hover:text-white">Insights</a>
+      <a href="#contact" class="transition hover:text-white">Contact</a>
+    </nav>
+
+    <p class="text-center text-sm text-zinc-600 md:text-right">
+      © 2026 UKE Content Studio.
+    </p>
+
+  </div>
 </footer>
   </main>
+
+  <script>
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpenIcon = document.getElementById("menu-open-icon");
+    const menuCloseIcon = document.getElementById("menu-close-icon");
+    const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add("hidden");
+      menuOpenIcon.classList.remove("hidden");
+      menuCloseIcon.classList.add("hidden");
+      mobileMenuButton.setAttribute("aria-expanded", "false");
+      mobileMenuButton.setAttribute("aria-label", "Open navigation menu");
+    }
+
+    mobileMenuButton.addEventListener("click", function () {
+      const menuIsClosed = mobileMenu.classList.contains("hidden");
+
+      if (menuIsClosed) {
+        mobileMenu.classList.remove("hidden");
+        menuOpenIcon.classList.add("hidden");
+        menuCloseIcon.classList.remove("hidden");
+        mobileMenuButton.setAttribute("aria-expanded", "true");
+        mobileMenuButton.setAttribute("aria-label", "Close navigation menu");
+      } else {
+        closeMobileMenu();
+      }
+    });
+
+    mobileMenuLinks.forEach(function (link) {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 768) {
+        closeMobileMenu();
+      }
+    });
+  </script>
 </body>
 </html>
